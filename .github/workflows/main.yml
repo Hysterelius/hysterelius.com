@@ -10,7 +10,9 @@ jobs:
     steps:
       # Check-out repository under $GITHUB_WORKSPACE
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
+        with:
+          submodules: true
       # Build static pages w/ Zola
       - name: Build 🏗️
         uses: Hysterelius/zola-build-action@v1.0.0
