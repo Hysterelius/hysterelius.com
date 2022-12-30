@@ -1,0 +1,18 @@
+# .github/workflow/main.yml
+on: 
+  push:
+    branches:
+      - main
+name: Build a Zola website
+jobs:
+  build-bundle-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      # Check-out repository under $GITHUB_WORKSPACE
+      - name: Checkout
+        uses: actions/checkout@v2
+      # Build static pages w/ Zola
+      - name: Build 🏗️
+        uses: Hysterelius/zola-build-action@v1
+        env:
+          CONFIG_FILE: "config.toml"
