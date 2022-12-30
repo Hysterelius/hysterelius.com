@@ -9,12 +9,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       # Check-out repository under $GITHUB_WORKSPACE
-      - name: Checkout
+      - name: Checkout 📋
         uses: actions/checkout@v3
         with:
           submodules: true
       # Build static pages w/ Zola
       - name: Build 🏗️
-        uses: Hysterelius/zola-build-action@v1.0.0
+        uses: Hysterelius/zola-build-action@v1.0.1
         env:
           CONFIG_FILE: "config.toml"
