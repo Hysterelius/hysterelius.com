@@ -12,14 +12,14 @@ feed_filename = "atom.xml"
 #ignored_content = ["*.{graphml,xlsx}", "temp.*"]
 #hard_link_static = false # set to true to hard link instead of copying, useful for very large files.
 taxonomies = [
-    {name = "categories", feed = true},
-    {name = "tags", feed = true},
+    { name = "categories", feed = true },
+    { name = "tags", feed = true },
 ]
 
 theme = "abridge"
 
 build_search_index = true
-[search]                # Options specific to elasticlunr search.
+[search] # Options specific to elasticlunr search.
 include_title = true        # include title of page/section in index
 include_description = false # include description of page/section in index
 include_content = true      # include rendered content of page/section in index
@@ -38,23 +38,23 @@ external_links_no_referrer = false # rel="noreferrer"
 smart_punctuation = false          # `...` to `…`, `"quote"` to `“curly”` etc
 
 [extra]
-uglyurls = false # if set to true then links are generated with the full path. eg https://abridge.netlify.app/index.html
-language_code = "en-US"
+uglyurls = false        # if set to true then links are generated with the full path. eg https://abridge.netlify.app/index.html
+language_code = "en-UK"
 # title_separator = "|"  # Separator between title and title_addition, set as |, -, _, etc
 # To disable title_addition but keep built in page additions eg, Posts page: "Posts | Abridge" set title_addition to an empty string
 # To always set the page title exactly eg "Abridge" then comment out the below line (not recommend, bad for SEO)
 # title_addition = "Fast & Lightweight Zola Theme" # a default value for title addition
-recent = true # TOC / index
+recent = true          # TOC / index
 recent_items = 9
 author = "Hysterelius" # Put Your Name here
 
-title_size_index = "s85" # size: s95, s90, s85, s80, s75, s70, false(full size)
-meta_index = { position="bottom", size="s90", author=false, readtime=false, readstring="min", date=true, categories_tags=true, divider=" " }
-meta_post = { position="top", size="s95", author=true, readtime=false, readstring="min read", date=true, categories_tags=true, divider=" " }
+title_size_index = "s85"                                                                                                                                     # size: s95, s90, s85, s80, s75, s70, false(full size)
+meta_index = { position = "bottom", size = "s90", author = false, readtime = false, readstring = "min", date = true, categories_tags = true, divider = " " }
+meta_post = { position = "top", size = "s95", author = true, readtime = false, readstring = "min read", date = true, categories_tags = true, divider = " " }
 ## position: top, bottom, both, false(hidden) ## size: s95, s90, s85, s80, s75, s70, false(full size)
 ## divider:    "&middot;"    "&bull;"    " "
 
-footer_size = "s90" # size: s95, s90, s85, s80, s75, s70, false(full size)
+footer_size = "s90"   # size: s95, s90, s85, s80, s75, s70, false(full size)
 footer_credit = false
 #footer_credit_override = '<p class="s90">Powered by <a href="https://www.getzola.org/" target="_blank">Zola</a> &#38; <a href="https://github.com/Jieiku/abridge/" target="_blank">Abridge</a></p>'
 
@@ -68,19 +68,19 @@ sitedesc = false # enables or disables the display of the site description below
 #copyright_start_year = 2019  # optional
 #copyright_end_year = 2020  # optional, recommend leaving unset, zola build will set this to current year by default
 headhr = false # show or hide horizontal rule below header
-foothr = true # show or hide horizontal rule above footer
+foothr = true  # show or hide horizontal rule above footer
 
 menu = [
-    {url = "/about/", name = "About", slash = true, blank = false},
-    {url = "/posts/", name = "Posts", slash = true, blank = false},
-    {url = "/categories/", name = "Categories", slash = true, blank = false},
-    {url = "/tags/", name = "Tags", slash = true, blank = false},
+    { url = "/about/", name = "About", slash = true, blank = false },
+    { url = "/posts/", name = "Posts", slash = true, blank = false },
+    { url = "/categories/", name = "Categories", slash = true, blank = false },
+    { url = "/tags/", name = "Tags", slash = true, blank = false },
 ]
 menu_footer = [
-    {url = "/about/", name = "About", slash = true, blank = false},
-    {url = "/contact/", name = "Contact", slash = true, blank = false},
-    {url = "/privacy/", name = "Privacy", slash = true, blank = false},
-    {url = "/sitemap.xml", name = "Sitemap", slash = false, blank = true},
+    { url = "/about/", name = "About", slash = true, blank = false },
+    # { url = "/contact/", name = "Contact", slash = true, blank = false },
+    { url = "/privacy/", name = "Privacy", slash = true, blank = false },
+    { url = "/sitemap.xml", name = "Sitemap", slash = false, blank = true },
 ]
 
 # Security Headers should preferably be set by your webserver (Nginx, Apache) https://observatory.mozilla.org  https://csp-evaluator.withgoogle.com/
@@ -95,22 +95,25 @@ menu_footer = [
 #################
 # Resource Files
 #################
-integrity = true # setting this to false is useful for developing, should normally be true.
-js_bundle = true # multiple javascript files combined into a single file
+integrity = true         # setting this to false is useful for developing, should normally be true.
+js_bundle = true         # multiple javascript files combined into a single file
 js_switcher = true
 js_search_facade = false # Do not load search until user interaction with search.
 # search library to use, valid values are: false, "elasticlunr", "tinysearch", "stork"
 search_library = false
 
 js_search_index = "search_index.en.js" # Separate Always, generated each build
-js_prestyle = "prestyle.js"# Bundleable - used to preload: FontAwesome, Katex, external Google Fonts
-js_codecopy = "codecopy.js"# Bundleable
-js_email = "email.js"# Bundleable
-js_theme = "theme.min.js" # Separate Always, comment out if using -auto/-light/-dark stylesheet. (required for switcher)
-js_themeButton = "theme_button.js"# Bundleable
+js_prestyle = "prestyle.js"            # Bundleable - used to preload: FontAwesome, Katex, external Google Fonts
+js_codecopy = "codecopy.js"            # Bundleable
+js_email = "email.js"                  # Bundleable
+js_theme = "theme.min.js"              # Separate Always, comment out if using -auto/-light/-dark stylesheet. (required for switcher)
+js_themeButton = "theme_button.js"     # Bundleable
 
 ########## Switcher ########## (comment this block out if NOT using switcher):
-stylesheets = [ "hys-switcher.css", "font-jbmono.css" ] # Orange Automatic Dark/Light Theme based on browser/system preference with switcher
+stylesheets = [
+    "hys-switcher.css",
+    "font-jbmono.css",
+] # Orange Automatic Dark/Light Theme based on browser/system preference with switcher
 #stylesheets = [ "abridge-blue-switcher.css" ] # Blue Automatic Night/Light Theme based on browser/system preference with switcher
 #stylesheets = [ "abridge-blueshade-switcher.css" ] # BlueShade Automatic Night/Light Theme based on browser/system preference with switcher
 #stylesheets = [ "abridge-switcher.css", "font.css" ] # include your own font!
@@ -132,22 +135,22 @@ stylesheets = [ "hys-switcher.css", "font-jbmono.css" ] # Orange Automatic Dark/
 
 banner = "banner.png" # Used as default image for OpenGraph/Twitter if page specific image is undefined.
 # favicons, comment out a line to disable loading some or all of these.
-favicon_theme_color = "#333333"
-favicon_ms_color = "#333333"
-favicon_webmanifest = "site.webmanifest" # Used for android-chrome-512x512.png and android-chrome-192x192.png
-favicon_mask = "safari-pinned-tab.svg" # safari-pinned-tab.svg
-favicon_mask_color = "#ff9900"
-favicon180 = "apple-touch-icon.png" # apple-touch-icon.png
+# favicon_theme_color = "#333333"
+# favicon_ms_color = "#333333"
+# favicon_webmanifest = "site.webmanifest" # Used for android-chrome-512x512.png and android-chrome-192x192.png
+# favicon_mask = "safari-pinned-tab.svg" # safari-pinned-tab.svg
+# favicon_mask_color = "#ff9900"
+# favicon180 = "apple-touch-icon.png" # apple-touch-icon.png
 favicon32 = "favicon-32x32.png" # favicon-32x32.png
 favicon16 = "favicon-16x16.png" # favicon-16x16.png
 
-icon_search = "svgs search" # Search button in search box.
-icon_adjust = "svgs adjust" # Theme Switcher button in top menu. (add class svgh to change colors on hover)
+icon_search = "svgs search"    # Search button in search box.
+icon_adjust = "svgs adjust"    # Theme Switcher button in top menu. (add class svgh to change colors on hover)
 icon_first = "svgs svgh angll" # Pagination First Page.
-icon_prev = "svgs svgh angl" # Pagination Previous Page.
-icon_next = "svgs svgh angr" # Pagination Next Page.
-icon_last = "svgs svgh angrr" # Pagination Last Page.
-icon_top = "svgs svgh angu" # Back to Top Button.
+icon_prev = "svgs svgh angl"   # Pagination Previous Page.
+icon_next = "svgs svgh angr"   # Pagination Next Page.
+icon_last = "svgs svgh angrr"  # Pagination Last Page.
+icon_top = "svgs svgh angu"    # Back to Top Button.
 
 # Uncomment below line to load fontawesome, eg: <i class="fa-solid fa-heart"></i>
 #fontawesome = "https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"
@@ -170,7 +173,7 @@ icon_top = "svgs svgh angu" # Back to Top Button.
 #    {url = "font/Roboto-Bold.woff2"},
 #]
 
-math = false # katex math js library, used to to render mathematical notations, requires javascript
+math = false             # katex math js library, used to to render mathematical notations, requires javascript
 math_auto_render = false
 
 #katex_css = "https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.css" # Fonts - use remote fonts
@@ -178,9 +181,9 @@ math_auto_render = false
 #katex_autorender_js = "https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/contrib/auto-render.min.js"
 #mathtex_js = "https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/contrib/mathtex-script-type.min.js"
 
-katex_css = "katex.min.css" # Fonts - to load the css locally, you also need to have all the fonts.
-katex_js = "katex.min.js" # use local js, so that we dont have to whitelist cdn.jsdelivr.net for script src in CSP
-mathtex_js = "mathtex-script-type.min.js" # use local js, so that we dont have to whitelist cdn.jsdelivr.net for script src in CSP
+katex_css = "katex.min.css"                # Fonts - to load the css locally, you also need to have all the fonts.
+katex_js = "katex.min.js"                  # use local js, so that we dont have to whitelist cdn.jsdelivr.net for script src in CSP
+mathtex_js = "mathtex-script-type.min.js"  # use local js, so that we dont have to whitelist cdn.jsdelivr.net for script src in CSP
 katex_autorender_js = "auto-render.min.js"
 katex_options = "katexoptions.js"
 katex_bundle = "katexbundle.min.js"
@@ -193,7 +196,7 @@ keywords = "Abridge, Abridge.css, Zola, Theme, Zola Theme, getzola, Semantic Htm
 # twitter = "your-user-name" # used for twitter related
 #google = "Your Google Site verification code."
 #bing = "Your Bing Site verification code."
-seo = true  # enable or disable seo-related meta tags: opengraph, facebook, twitter
+seo = true # enable or disable seo-related meta tags: opengraph, facebook, twitter
 
 # Footer social links; full options listed in macros/social.html
 [extra.social]

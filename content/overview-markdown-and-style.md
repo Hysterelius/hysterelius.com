@@ -108,6 +108,28 @@ Surround very Large tables with `<figure></figure>` so they can scroll horizonta
     <p>Stay awhile, and listen!</p>
 </details>
 
+# Info boxes
+<div class="box error">
+<i type="Button" class="svg error-icon" title="Warning Icon"></i>
+<p>
+Cloudflare Pages removes all meta headers, I would recommend this <a el="noopener" target="_blank" href="https://scotthelme.co.uk/security-headers-cloudflare-worker/">tool</a> to add them back in.
+</p>
+</div>
+
+<div class="box warning">
+<i type="Button" class="svg warning-icon" title="Warning Icon"></i>
+<p>
+Cloudflare Pages removes all meta headers, I would recommend this <a el="noopener" target="_blank" href="https://scotthelme.co.uk/security-headers-cloudflare-worker/">tool</a> to add them back in.
+</p>
+</div>
+
+<div class="box info">
+<i type="Button" class="svg info-icon" title="Warning Icon"></i>
+<p>
+Cloudflare Pages removes all meta headers, I would recommend this <a el="noopener" target="_blank" href="https://scotthelme.co.uk/security-headers-cloudflare-worker/">tool</a> to add them back in.
+</p>
+</div>
+
 # Code Blocks
 
 Code blocks.. ❤️ with automatic syntax highlighting ✨‍

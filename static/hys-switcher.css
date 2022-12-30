@@ -14,37 +14,33 @@
     --fh: 700
 }
 
-@media (min-width: 576px) {
+@media (min-width:576px) {
     :root {
         --fs: 1rem
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width:768px) {
     :root {
         --fs: 1.04rem
     }
 }
 
-@media (min-width: 992px) {
+@media (min-width:992px) {
     :root {
         --fs: 1.08rem
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width:1200px) {
     :root {
         --fs: 1.12rem
     }
 }
 
-/* Change code colours to material */
-
-/* @import url("syntax-theme-light.css") (prefers-color-scheme: light); */
-
 *,
-*::before,
-*::after {
+::after,
+::before {
     box-sizing: border-box
 }
 
@@ -145,7 +141,7 @@ mark {
 blockquote {
     margin-left: 0;
     padding: .5rem 0 .5rem 1.5rem;
-    border-left: 0.25rem solid var(--c3)
+    border-left: .25rem solid var(--c3)
 }
 
 blockquote>:last-child {
@@ -156,8 +152,8 @@ small {
     font-size: .875rem
 }
 
-.footnote-definition sup,
-.footnote-definition p {
+.footnote-definition p,
+.footnote-definition sup {
     display: inline
 }
 
@@ -194,8 +190,8 @@ ul {
     font-size: var(--fs)
 }
 
-ul,
-ol {
+ol,
+ul {
     padding-right: 0;
     padding-left: var(--s2)
 }
@@ -232,20 +228,20 @@ body {
     margin: 0
 }
 
+footer,
 header,
-main,
-footer {
+main {
     width: 100%;
     margin-right: auto;
     margin-left: auto;
     padding: var(--s1)
 }
 
-@media (min-width: 1200px) {
+@media (min-width:1200px) {
 
+    footer,
     header,
-    main,
-    footer {
+    main {
         min-width: 1200px;
         max-width: 60%
     }
@@ -261,7 +257,7 @@ main {
 
 header hr,
 main hr {
-    margin: 0.1rem 0
+    margin: .1rem 0
 }
 
 footer {
@@ -270,15 +266,15 @@ footer {
 
 footer hr,
 footer p {
-    margin: 0.1rem 0 .3rem
+    margin: .1rem 0 .3rem
 }
 
 main nav a,
 main nav a:visited {
     font-weight: var(--fh);
-    border: 0.1rem solid var(--c4);
+    border: .1rem solid var(--c4);
     border-radius: var(--br);
-    padding: 0.1rem var(--s1)
+    padding: .1rem var(--s1)
 }
 
 main nav a:hover {
@@ -305,8 +301,8 @@ nav>div {
     margin: var(--s1) 0
 }
 
-nav>div ul,
-nav>div h2 {
+nav>div h2,
+nav>div ul {
     line-height: 1.9;
     margin: 0;
     padding: 0
@@ -328,7 +324,7 @@ nav div h2:hover {
 
 nav h1 {
     margin-bottom: 0;
-    margin-top: 0.2rem
+    margin-top: .2rem
 }
 
 nav li {
@@ -360,7 +356,7 @@ main nav li.inp {
 .off {
     color: var(--c4);
     font-weight: var(--fh);
-    border: 0.1rem solid var(--c3);
+    border: .1rem solid var(--c3);
     border-radius: var(--br)
 }
 
@@ -371,12 +367,12 @@ main nav li.inp {
 
 .on {
     font-weight: var(--fh);
-    border: 0.1rem solid var(--c4);
+    border: .1rem solid var(--c4);
     border-radius: var(--br)
 }
 
-.mode:hover,
-.cnav {
+.cnav,
+.mode:hover {
     color: var(--a1)
 }
 
@@ -389,7 +385,7 @@ footer nav li {
     margin: 0 .2rem .4rem
 }
 
-@media (max-width: 768px) {
+@media (max-width:768px) {
     header nav {
         display: flex;
         flex-direction: column
@@ -418,8 +414,8 @@ footer nav li {
 }
 
 img,
-video,
-svg {
+svg,
+video {
     max-width: 100%;
     height: auto
 }
@@ -470,9 +466,9 @@ thead tr {
     background-color: var(--c2)
 }
 
-pre,
 code,
 kbd,
+pre,
 samp,
 tt,
 var {
@@ -493,7 +489,7 @@ pre {
 
 pre>code {
     display: block;
-    background: transparent
+    background: 0 0
 }
 
 kbd {
@@ -512,8 +508,8 @@ hr {
     border-top: 1px solid var(--f1)
 }
 
-header hr,
-footer hr {
+footer hr,
+header hr {
     border-top: 1px solid var(--c4)
 }
 
@@ -534,7 +530,7 @@ input,
 select,
 textarea {
     margin: 0;
-    padding: 0.2rem var(--s1);
+    padding: .2rem var(--s1);
     max-width: 100%;
     background: var(--c2);
     border: 0;
@@ -548,10 +544,10 @@ button.del {
     color: var(--cr)
 }
 
-button,
-[type="button"i],
-[type="submit"i],
-[type="reset"i] {
+[type=button i],
+[type=reset i],
+[type=submit i],
+button {
     display: inline-block;
     text-align: center;
     white-space: nowrap;
@@ -561,17 +557,17 @@ button,
     transition: opacity .25s
 }
 
-button:hover,
-[type="button"i]:hover,
-[type="submit"i]:hover,
-[type="reset"i]:hover {
+[type=button i]:hover,
+[type=reset i]:hover,
+[type=submit i]:hover,
+button:hover {
     opacity: .75
 }
 
-button[disabled],
-[type="button"i][disabled],
-[type="submit"i][disabled],
-[type="reset"i][disabled] {
+[type=button i][disabled],
+[type=reset i][disabled],
+[type=submit i][disabled],
+button[disabled] {
     opacity: .5
 }
 
@@ -591,12 +587,12 @@ label {
     margin-bottom: .25rem
 }
 
-select,
-input:not([size]):not([type="button"i]):not([type="submit"i]):not([type="reset"i]):not([type="checkbox"i]):not([type="radio"i]) {
+input:not([size]):not([type=button i]):not([type=submit i]):not([type=reset i]):not([type=checkbox i]):not([type=radio i]),
+select {
     width: 100%
 }
 
-[type="color"i] {
+[type=color i] {
     min-height: 2.125rem
 }
 
@@ -676,34 +672,34 @@ div:empty {
     overflow: auto
 }
 
-#suggestions a,
-#results a {
+#results a,
+#suggestions a {
     display: block;
     text-decoration: none;
     padding: var(--s1);
     margin: 0 var(--s1)
 }
 
-#suggestions a:hover,
-#suggestions a:focus,
+#results a:focus,
 #results a:hover,
-#results a:focus {
+#suggestions a:focus,
+#suggestions a:hover {
     background: var(--c2)
 }
 
-#suggestions span,
-#results span {
+#results span,
+#suggestions span {
     line-height: 1.5;
     display: block
 }
 
-#suggestions span:first-child,
-#results span:first-child {
+#results span:first-child,
+#suggestions span:first-child {
     font-weight: var(--fh)
 }
 
-#suggestions span:nth-child(2),
-#results span:nth-child(2) {
+#results span:nth-child(2),
+#suggestions span:nth-child(2) {
     color: var(--f1)
 }
 
@@ -728,7 +724,7 @@ nav>div>form>div:last-of-type {
     margin-left: -2.4rem
 }
 
-@media (max-width: 768px) {
+@media (max-width:768px) {
     .searchd>input {
         max-width: 100%;
         flex-grow: 1
@@ -786,7 +782,7 @@ main .toc-item-child {
     overflow: auto
 }
 
-@media (max-width: 768px) {
+@media (max-width:768px) {
     .toc {
         display: none
     }
@@ -911,6 +907,24 @@ main .toc-item-child {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' stroke='%23f00' stroke-width='2' fill='none' viewBox='0 0 24 24'%3E%3Cpath d='m9.8 15 5.7-3.3-5.8-3.2V15Zm12.7-8.6a2.8 2.8 0 0 0-1.9-2C18.9 4 12 4 12 4s-6.9 0-8.6.5a2.8 2.8 0 0 0-2 2 29 29 0 0 0-.4 5.3 29 29 0 0 0 .5 5.3A2.8 2.8 0 0 0 3.4 19c1.7.5 8.6.5 8.6.5s6.9 0 8.6-.5a2.8 2.8 0 0 0 2-2 29 29 0 0 0 .4-5.3 29 29 0 0 0-.5-5.3z'/%3E%3C/svg%3E")
 }
 
+.error-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23f22' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' %3E%3Cpath d='M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0zM12 9v4m0 4h0'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+
+.warning-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ff9721' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-alert-octagon'%3E%3Cpath d='M7.9 2h8.2L22 7.9v8.2L16.1 22H7.9L2 16.1V7.9L7.9 2zM12 8v4m0 4h0'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+
+.info-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%232188ff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3Cpath d='M12 8v4m0 4h0'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+
 .svg {
     width: 1.8rem;
     height: 1.8rem;
@@ -942,7 +956,7 @@ main .toc-item-child {
 }
 
 .s90 {
-    font-size: .90em
+    font-size: .9em
 }
 
 .s85 {
@@ -950,7 +964,7 @@ main .toc-item-child {
 }
 
 .s80 {
-    font-size: .80em
+    font-size: .8em
 }
 
 .s75 {
@@ -958,7 +972,7 @@ main .toc-item-child {
 }
 
 .s70 {
-    font-size: .70em
+    font-size: .7em
 }
 
 .hpad {
@@ -987,6 +1001,81 @@ pre code[data-lang]::before {
     opacity: 1
 }
 
+
+.box {
+    padding: 15px;
+    border: 1px solid transparent;
+    border-color: transparent;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+}
+
+.box i {
+    margin: 0 1rem;
+    flex-shrink: 0;
+}
+
+:root:not(.light) .box a {
+    color: #570067;
+}
+
+:root:not(.light) .error {
+    color: #690005;
+    background-color: #ffb4ab;
+}
+:root:not(.light) .error p {
+    color: #690005;
+    background-color: #ffb4ab;
+}
+
+.light .error {
+    color: #410002;
+    background-color: #ffdad6;
+}
+.light .error p {
+    color: #410002;
+    background-color: #ffdad6;
+}
+
+:root:not(.light) .warning {
+    color: #684500;
+    background-color: #ffe0aa;
+}
+:root:not(.light) .warning p {
+    color: #684500;
+    background-color: #ffe0aa;
+}
+
+.light .warning {
+    color: #3f1d00;
+    background-color: #ffeed6;
+}
+.light .warning p {
+    color: #3f1d00;
+    background-color: #ffeed6;
+}
+
+:root:not(.light) .info {
+    color: #004568;
+    background-color: #aae7ff;
+}
+:root:not(.light) .info p {
+    color: #004568;
+    background-color: #aae7ff;
+}
+
+.light .info {
+    color: #001f3f;
+    background-color: #d6f2ff;
+}
+.light .info p {
+    color: #001f3f;
+    background-color: #d6f2ff;
+}
+
+
 .cc {
     opacity: 0;
     z-index: 9;
@@ -999,8 +1088,6 @@ pre code[data-lang]::before {
 :root:not(.light) code table mark {
     filter: brightness(120%)
 }
-
-
 
 code table {
     font-size: .8rem;
@@ -1032,846 +1119,838 @@ code thead tr {
     background-color: unset
 }
 
-/*
- * theme "Material-Theme-Darker" generated by syntect
- */
-
- :root:not(.light) .z-code {
-    color: #eeffff;
-    background-color: #212121;
+:root:not(.light) .z-code {
+    color: #eff;
+    background-color: #212121
 }
 
 :root:not(.light) .z-comment,
 :root:not(.light) .z-punctuation.z-definition.z-comment {
     color: #4a4a4a;
-    font-style: italic;
+    font-style: italic
 }
 
-:root:not(.light) .z-variable,
-:root:not(.light) .z-string .z-constant.z-other.z-placeholder {
-    color: #eeffff;
+:root:not(.light) .z-string .z-constant.z-other.z-placeholder,
+:root:not(.light) .z-variable {
+    color: #eff
 }
 
 :root:not(.light) .z-constant.z-other.z-color {
-    color: #ffffff;
+    color: #fff
 }
 
 :root:not(.light) .z-invalid,
-:root:not(.light) .z-invalid.z-illegal,
-:root:not(.light) .z-invalid.z-broken {
-    color: #ffffff;
-    background-color: #ff5370;
+:root:not(.light) .z-invalid.z-broken,
+:root:not(.light) .z-invalid.z-illegal {
+    color: #fff;
+    background-color: #ff5370
 }
 
 :root:not(.light) .z-invalid.z-unimplemented {
-    color: #ffffff;
-    background-color: #c3e88d;
+    color: #fff;
+    background-color: #c3e88d
 }
 
 :root:not(.light) .z-invalid.z-deprecated {
-    color: #ffffff;
-    background-color: #c792ea;
+    color: #fff;
+    background-color: #c792ea
 }
 
 :root:not(.light) .z-keyword,
-:root:not(.light) .z-storage.z-type,
-:root:not(.light) .z-storage.z-modifier {
-    color: #c792ea;
+:root:not(.light) .z-storage.z-modifier,
+:root:not(.light) .z-storage.z-type {
+    color: #c792ea
 }
 
-:root:not(.light) .z-storage.z-type,
-:root:not(.light) .z-keyword.z-control {
-    font-style: italic;
+:root:not(.light) .z-keyword.z-control,
+:root:not(.light) .z-storage.z-type {
+    font-style: italic
 }
 
-:root:not(.light) .z-keyword.z-operator,
 :root:not(.light) .z-constant.z-other.z-color,
-:root:not(.light) .z-punctuation,
+:root:not(.light) .z-keyword.z-operator,
+:root:not(.light) .z-keyword.z-other.z-substitution,
+:root:not(.light) .z-keyword.z-other.z-template,
 :root:not(.light) .z-meta.z-tag,
+:root:not(.light) .z-punctuation,
 :root:not(.light) .z-punctuation.z-definition.z-tag,
-:root:not(.light) .z-punctuation.z-separator.z-inheritance.z-php,
-:root:not(.light) .z-punctuation.z-definition.z-tag.z-html,
 :root:not(.light) .z-punctuation.z-definition.z-tag.z-begin.z-html,
 :root:not(.light) .z-punctuation.z-definition.z-tag.z-end.z-html,
+:root:not(.light) .z-punctuation.z-definition.z-tag.z-html,
 :root:not(.light) .z-punctuation.z-section.z-embedded,
-:root:not(.light) .z-keyword.z-other.z-template,
-:root:not(.light) .z-keyword.z-other.z-substitution {
-    color: #89ddff;
+:root:not(.light) .z-punctuation.z-separator.z-inheritance.z-php {
+    color: #89ddff
 }
 
 :root:not(.light) .z-entity.z-name.z-tag,
-:root:not(.light) .z-meta.z-tag.z-sgml,
-:root:not(.light) .z-markup.z-deleted.z-git_gutter {
-    color: #f07178;
+:root:not(.light) .z-markup.z-deleted.z-git_gutter,
+:root:not(.light) .z-meta.z-tag.z-sgml {
+    color: #f07178
 }
 
 :root:not(.light) .z-entity.z-name.z-function,
-:root:not(.light) .z-meta.z-function-call,
-:root:not(.light) .z-variable.z-function,
-:root:not(.light) .z-support.z-function,
 :root:not(.light) .z-keyword.z-other.z-special-method,
-:root:not(.light) .z-meta.z-block-level {
-    color: #82aaff;
+:root:not(.light) .z-meta.z-block-level,
+:root:not(.light) .z-meta.z-function-call,
+:root:not(.light) .z-support.z-function,
+:root:not(.light) .z-variable.z-function {
+    color: #82aaff
 }
 
-:root:not(.light) .z-support.z-other.z-variable,
-:root:not(.light) .z-string.z-other.z-link {
-    color: #f07178;
+:root:not(.light) .z-string.z-other.z-link,
+:root:not(.light) .z-support.z-other.z-variable {
+    color: #f07178
 }
 
-:root:not(.light) .z-constant.z-numeric,
-:root:not(.light) .z-constant.z-language,
-:root:not(.light) .z-support.z-constant,
 :root:not(.light) .z-constant.z-character,
-:root:not(.light) .z-variable.z-parameter,
-:root:not(.light) .z-keyword.z-other.z-unit {
-    color: #f78c6c;
+:root:not(.light) .z-constant.z-language,
+:root:not(.light) .z-constant.z-numeric,
+:root:not(.light) .z-keyword.z-other.z-unit,
+:root:not(.light) .z-support.z-constant,
+:root:not(.light) .z-variable.z-parameter {
+    color: #f78c6c
 }
 
-:root:not(.light) .z-string,
-:root:not(.light) .z-constant.z-other.z-symbol,
 :root:not(.light) .z-constant.z-other.z-key,
+:root:not(.light) .z-constant.z-other.z-symbol,
 :root:not(.light) .z-entity.z-other.z-inherited-class,
 :root:not(.light) .z-markup.z-heading,
 :root:not(.light) .z-markup.z-inserted.z-git_gutter,
-:root:not(.light) .z-meta.z-group.z-braces.z-curly .z-constant.z-other.z-object.z-key.z-js .z-string.z-unquoted.z-label.z-js {
-    color: #c3e88d;
+:root:not(.light) .z-meta.z-group.z-braces.z-curly .z-constant.z-other.z-object.z-key.z-js .z-string.z-unquoted.z-label.z-js,
+:root:not(.light) .z-string {
+    color: #c3e88d
 }
 
 :root:not(.light) .z-entity.z-name.z-class,
 :root:not(.light) .z-entity.z-name.z-type.z-class,
-:root:not(.light) .z-support.z-type,
+:root:not(.light) .z-markup.z-changed.z-git_gutter,
+:root:not(.light) .z-meta.z-use.z-php,
 :root:not(.light) .z-support.z-class,
 :root:not(.light) .z-support.z-orther.z-namespace.z-use.z-php,
-:root:not(.light) .z-meta.z-use.z-php,
 :root:not(.light) .z-support.z-other.z-namespace.z-php,
-:root:not(.light) .z-markup.z-changed.z-git_gutter,
+:root:not(.light) .z-support.z-type,
 :root:not(.light) .z-support.z-type.z-sys-types {
-    color: #ffcb6b;
+    color: #ffcb6b
 }
 
 :root:not(.light) .z-source.z-css .z-support.z-type,
+:root:not(.light) .z-source.z-less .z-support.z-type,
 :root:not(.light) .z-source.z-sass .z-support.z-type,
 :root:not(.light) .z-source.z-scss .z-support.z-type,
-:root:not(.light) .z-source.z-less .z-support.z-type,
 :root:not(.light) .z-source.z-stylus .z-support.z-type {
-    color: #b2ccd6;
+    color: #b2ccd6
 }
 
 :root:not(.light) .z-entity.z-name.z-module.z-js,
 :root:not(.light) .z-variable.z-import.z-parameter.z-js,
 :root:not(.light) .z-variable.z-other.z-class.z-js {
-    color: #ff5370;
+    color: #ff5370
 }
 
 :root:not(.light) .z-variable.z-language {
     color: #ff5370;
-    font-style: italic;
+    font-style: italic
 }
 
 :root:not(.light) .z-entity.z-name.z-method.z-js {
-    color: #82aaff;
+    color: #82aaff
 }
 
 :root:not(.light) .z-meta.z-class-method.z-js .z-entity.z-name.z-function.z-js,
 :root:not(.light) .z-variable.z-function.z-constructor {
-    color: #82aaff;
+    color: #82aaff
 }
 
 :root:not(.light) .z-entity.z-other.z-attribute-name {
-    color: #c792ea;
+    color: #c792ea
 }
 
-:root:not(.light) .z-text.z-html.z-basic .z-entity.z-other.z-attribute-name.z-html,
-:root:not(.light) .z-text.z-html.z-basic .z-entity.z-other.z-attribute-name {
+:root:not(.light) .z-text.z-html.z-basic .z-entity.z-other.z-attribute-name,
+:root:not(.light) .z-text.z-html.z-basic .z-entity.z-other.z-attribute-name.z-html {
     color: #ffcb6b;
-    font-style: italic;
+    font-style: italic
 }
 
 :root:not(.light) .z-entity.z-other.z-attribute-name.z-class {
-    color: #ffcb6b;
+    color: #ffcb6b
 }
 
 :root:not(.light) .z-source.z-sass .z-keyword.z-control {
-    color: #82aaff;
+    color: #82aaff
 }
 
 :root:not(.light) .z-markup.z-inserted {
-    color: #c3e88d;
+    color: #c3e88d
 }
 
 :root:not(.light) .z-markup.z-deleted {
-    color: #ff5370;
+    color: #ff5370
 }
 
 :root:not(.light) .z-markup.z-changed {
-    color: #c792ea;
+    color: #c792ea
 }
 
 :root:not(.light) .z-string.z-regexp {
-    color: #89ddff;
+    color: #89ddff
 }
 
 :root:not(.light) .z-constant.z-character.z-escape {
-    color: #89ddff;
+    color: #89ddff
 }
 
-:root:not(.light) .z-*url*,
 :root:not(.light) .z-*link*,
-:root:not(.light) .z-*uri* {
-    font-style: underline;
+:root:not(.light) .z-*uri*,
+:root:not(.light) .z-*url* {
+    font-style: underline
 }
 
 :root:not(.light) .z-constant.z-numeric.z-line-number.z-find-in-files {
-    color: #c17e70;
+    color: #c17e70
 }
 
 :root:not(.light) .z-entity.z-name.z-filename.z-find-in-files {
-    color: #c3e88d;
+    color: #c3e88d
 }
 
 :root:not(.light) .z-tag.z-decorator.z-js .z-entity.z-name.z-tag.z-js,
 :root:not(.light) .z-tag.z-decorator.z-js .z-punctuation.z-definition.z-tag.z-js {
     color: #82aaff;
-    font-style: italic;
+    font-style: italic
 }
 
 :root:not(.light) .z-source.z-js .z-constant.z-other.z-object.z-key.z-js .z-string.z-unquoted.z-label.z-js {
     color: #ff5370;
-    font-style: italic;
+    font-style: italic
 }
 
-:root:not(.light) .z-source.z-json .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta.z-structure.z-dictionary.z-json .z-string.z-quoted.z-double.z-json,
-:root:not(.light) .z-source.z-json .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta.z-structure.z-dictionary.z-json .z-punctuation.z-definition.z-string {
-    color: #c3e88d;
+:root:not(.light) .z-source.z-json .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta.z-structure.z-dictionary.z-json .z-punctuation.z-definition.z-string,
+:root:not(.light) .z-source.z-json .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta.z-structure.z-dictionary.z-json .z-string.z-quoted.z-double.z-json {
+    color: #c3e88d
 }
 
-:root:not(.light) .z-source.z-json .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta.z-structure.z-dictionary.z-json .z-string.z-quoted.z-double.z-json,
-:root:not(.light) .z-source.z-json .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta.z-structure.z-dictionary.z-json .z-punctuation.z-definition.z-string {
-    color: #c792ea;
+:root:not(.light) .z-source.z-json .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta.z-structure.z-dictionary.z-json .z-punctuation.z-definition.z-string,
+:root:not(.light) .z-source.z-json .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta.z-structure.z-dictionary.z-json .z-string.z-quoted.z-double.z-json {
+    color: #c792ea
 }
 
-:root:not(.light) .z-source.z-json .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta.z-structure.z-dictionary.z-json .z-string.z-quoted.z-double.z-json,
-:root:not(.light) .z-source.z-json .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta.z-structure.z-dictionary.z-json .z-punctuation.z-definition.z-string {
-    color: #f07178;
+:root:not(.light) .z-source.z-json .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta.z-structure.z-dictionary.z-json .z-punctuation.z-definition.z-string,
+:root:not(.light) .z-source.z-json .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta.z-structure.z-dictionary.z-json .z-string.z-quoted.z-double.z-json {
+    color: #f07178
 }
 
-:root:not(.light) .z-source.z-json .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta.z-structure.z-dictionary.z-json .z-string.z-quoted.z-double.z-json,
-:root:not(.light) .z-source.z-json .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta.z-structure.z-dictionary.z-json .z-punctuation.z-definition.z-string {
-    color: #82aaff;
+:root:not(.light) .z-source.z-json .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta.z-structure.z-dictionary.z-json .z-punctuation.z-definition.z-string,
+:root:not(.light) .z-source.z-json .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta.z-structure.z-dictionary.z-json .z-string.z-quoted.z-double.z-json {
+    color: #82aaff
 }
 
-:root:not(.light) .z-source.z-json .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta.z-structure.z-dictionary.z-json .z-string.z-quoted.z-double.z-json,
-:root:not(.light) .z-source.z-json .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta.z-structure.z-dictionary.z-json .z-punctuation.z-definition.z-string {
-    color: #c17e70;
+:root:not(.light) .z-source.z-json .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta.z-structure.z-dictionary.z-json .z-punctuation.z-definition.z-string,
+:root:not(.light) .z-source.z-json .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta.z-structure.z-dictionary.z-json .z-string.z-quoted.z-double.z-json {
+    color: #c17e70
 }
 
-:root:not(.light) .z-source.z-json .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta.z-structure.z-dictionary.z-json .z-string.z-quoted.z-double.z-json,
-:root:not(.light) .z-source.z-json .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta.z-structure.z-dictionary.z-json .z-punctuation.z-definition.z-string {
-    color: #ff5370;
+:root:not(.light) .z-source.z-json .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta.z-structure.z-dictionary.z-json .z-punctuation.z-definition.z-string,
+:root:not(.light) .z-source.z-json .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta.z-structure.z-dictionary.z-json .z-string.z-quoted.z-double.z-json {
+    color: #ff5370
 }
 
-:root:not(.light) .z-source.z-json .z-meta .z-meta .z-meta .z-meta.z-structure.z-dictionary.z-json .z-string.z-quoted.z-double.z-json,
-:root:not(.light) .z-source.z-json .z-meta .z-meta .z-meta .z-meta.z-structure.z-dictionary.z-json .z-punctuation.z-definition.z-string {
-    color: #f78c6c;
+:root:not(.light) .z-source.z-json .z-meta .z-meta .z-meta .z-meta.z-structure.z-dictionary.z-json .z-punctuation.z-definition.z-string,
+:root:not(.light) .z-source.z-json .z-meta .z-meta .z-meta .z-meta.z-structure.z-dictionary.z-json .z-string.z-quoted.z-double.z-json {
+    color: #f78c6c
 }
 
-:root:not(.light) .z-source.z-json .z-meta .z-meta.z-structure.z-dictionary.z-json .z-string.z-quoted.z-double.z-json,
-:root:not(.light) .z-source.z-json .z-meta .z-meta.z-structure.z-dictionary.z-json .z-punctuation.z-definition.z-string {
-    color: #ffcb6b;
+:root:not(.light) .z-source.z-json .z-meta .z-meta.z-structure.z-dictionary.z-json .z-punctuation.z-definition.z-string,
+:root:not(.light) .z-source.z-json .z-meta .z-meta.z-structure.z-dictionary.z-json .z-string.z-quoted.z-double.z-json {
+    color: #ffcb6b
 }
 
-:root:not(.light) .z-source.z-json .z-meta.z-structure.z-dictionary.z-json .z-string.z-quoted.z-double.z-json,
-:root:not(.light) .z-source.z-json .z-meta.z-structure.z-dictionary.z-json .z-punctuation.z-definition.z-string {
-    color: #c792ea;
+:root:not(.light) .z-source.z-json .z-meta.z-structure.z-dictionary.z-json .z-punctuation.z-definition.z-string,
+:root:not(.light) .z-source.z-json .z-meta.z-structure.z-dictionary.z-json .z-string.z-quoted.z-double.z-json {
+    color: #c792ea
 }
 
-:root:not(.light) .z-text.z-html.z-markdown,
-:root:not(.light) .z-punctuation.z-definition.z-list_item.z-markdown {
-    color: #eeffff;
+:root:not(.light) .z-punctuation.z-definition.z-list_item.z-markdown,
+:root:not(.light) .z-text.z-html.z-markdown {
+    color: #eff
 }
 
 :root:not(.light) .z-text.z-html.z-markdown .z-markup.z-raw.z-inline {
-    color: #c792ea;
+    color: #c792ea
 }
 
 :root:not(.light) .z-text.z-html.z-markdown .z-punctuation.z-definition.z-raw.z-markdown {
-    color: #65737e;
+    color: #65737e
 }
 
 :root:not(.light) .z-markdown.z-heading,
 :root:not(.light) .z-markup.z-heading,
 :root:not(.light) .z-markup.z-heading .z-entity.z-name,
 :root:not(.light) .z-markup.z-heading.z-markdown .z-punctuation.z-definition.z-heading.z-markdown {
-    color: #c3e88d;
+    color: #c3e88d
 }
 
 :root:not(.light) .z-markup.z-italic {
     color: #f07178;
-    font-style: italic;
+    font-style: italic
 }
 
 :root:not(.light) .z-markup.z-bold,
 :root:not(.light) .z-markup.z-bold .z-string {
     color: #f07178;
-    font-weight: bold;
+    font-weight: 700
 }
 
 :root:not(.light) .z-markup.z-bold .z-markup.z-italic,
-:root:not(.light) .z-markup.z-italic .z-markup.z-bold,
-:root:not(.light) .z-markup.z-quote .z-markup.z-bold,
 :root:not(.light) .z-markup.z-bold .z-markup.z-italic .z-string,
+:root:not(.light) .z-markup.z-italic .z-markup.z-bold,
 :root:not(.light) .z-markup.z-italic .z-markup.z-bold .z-string,
+:root:not(.light) .z-markup.z-quote .z-markup.z-bold,
 :root:not(.light) .z-markup.z-quote .z-markup.z-bold .z-string {
-    font-weight: bold;
-    font-style: italic;
+    font-weight: 700;
+    font-style: italic
 }
 
 :root:not(.light) .z-markup.z-underline {
     color: #f78c6c;
-    font-style: underline;
+    font-style: underline
 }
 
 :root:not(.light) .z-markup.z-quote .z-punctuation.z-definition.z-blockquote.z-markdown {
     color: #65737e;
-    background-color: #65737e;
+    background-color: #65737e
 }
 
 :root:not(.light) .z-string.z-other.z-link.z-title.z-markdown {
-    color: #82aaff;
+    color: #82aaff
 }
 
 :root:not(.light) .z-string.z-other.z-link.z-description.z-title.z-markdown {
-    color: #c792ea;
+    color: #c792ea
 }
 
 :root:not(.light) .z-constant.z-other.z-reference.z-link.z-markdown {
-    color: #ffcb6b;
+    color: #ffcb6b
 }
 
 :root:not(.light) .z-markup.z-raw.z-block {
-    color: #c792ea;
+    color: #c792ea
 }
 
 :root:not(.light) .z-markup.z-raw.z-block.z-fenced.z-markdown {
-    background-color: #000000;
+    background-color: #000
 }
 
 :root:not(.light) .z-punctuation.z-definition.z-fenced.z-markdown {
-    background-color: #000000;
+    background-color: #000
 }
 
 :root:not(.light) .z-markup.z-raw.z-block.z-fenced.z-markdown,
-:root:not(.light) .z-variable.z-language.z-fenced.z-markdown,
-:root:not(.light) .z-punctuation.z-section.z-class.z-end {
-    color: #eeffff;
+:root:not(.light) .z-punctuation.z-section.z-class.z-end,
+:root:not(.light) .z-variable.z-language.z-fenced.z-markdown {
+    color: #eff
 }
 
 :root:not(.light) .z-variable.z-language.z-fenced.z-markdown {
-    color: #65737e;
+    color: #65737e
 }
 
 :root:not(.light) .z-text.z-html.z-markdown .z-punctuation.z-definition {
-    color: #4a4a4a;
+    color: #4a4a4a
 }
 
 :root:not(.light) .z-text.z-html.z-markdown .z-meta.z-disable-markdown .z-punctuation.z-definition {
-    color: #89ddff;
+    color: #89ddff
 }
 
 :root:not(.light) .z-meta.z-separator {
     color: #65737e;
-    background-color: #000000;
-    font-weight: bold;
+    background-color: #000;
+    font-weight: 700
 }
 
 :root:not(.light) .z-acejump.z-label.z-blue {
-    color: #ffffff;
-    background-color: #82aaff;
+    color: #fff;
+    background-color: #82aaff
 }
 
 :root:not(.light) .z-acejump.z-label.z-green {
-    color: #ffffff;
-    background-color: #c3e88d;
+    color: #fff;
+    background-color: #c3e88d
 }
 
 :root:not(.light) .z-acejump.z-label.z-orange {
-    color: #ffffff;
-    background-color: #f78c6c;
+    color: #fff;
+    background-color: #f78c6c
 }
 
 :root:not(.light) .z-acejump.z-label.z-purple {
-    color: #ffffff;
-    background-color: #c792ea;
+    color: #fff;
+    background-color: #c792ea
 }
 
 :root:not(.light) .z-sublimelinter.z-mark.z-warning {
-    color: #ffcb6b;
+    color: #ffcb6b
 }
 
 :root:not(.light) .z-sublimelinter.z-gutter-mark {
-    color: #ffffff;
+    color: #fff
 }
 
 :root:not(.light) .z-sublimelinter.z-mark.z-error {
-    color: #ff5370;
+    color: #ff5370
 }
 
 :root:not(.light) .z-sublimelinter.z-annotations {
-    background-color: #c17e70;
+    background-color: #c17e70
 }
 
 :root:not(.light) .z-markup.z-ignored.z-git_gutter {
-    color: #65737e;
+    color: #65737e
 }
 
 :root:not(.light) .z-markup.z-untracked.z-git_gutter {
-    color: #65737e;
+    color: #65737e
 }
 
 :root:not(.light) .z-markup.z-inserted.z-git_gutter {
-    color: #c3e88d;
+    color: #c3e88d
 }
 
 :root:not(.light) .z-markup.z-changed.z-git_gutter {
-    color: #ffcb6b;
+    color: #ffcb6b
 }
 
 :root:not(.light) .z-markup.z-deleted.z-git_gutter {
-    color: #ff5370;
+    color: #ff5370
 }
 
 :root:not(.light) .z-brackethighlighter.z-default {
-    color: #b2ccd6;
+    color: #b2ccd6
 }
 
 :root:not(.light) .z-brackethighlighter.z-quote {
-    color: #c3e88d;
+    color: #c3e88d
 }
 
 :root:not(.light) .z-brackethighlighter.z-unmatched {
-    color: #ff5370;
+    color: #ff5370
 }
 
-/*
- * theme "Material-Theme-Lighter" generated by syntect
- */
-
- .light:root .z-code {
-    color: #80cbc4;
-    background-color: #fafafa;
+.light:root .z-code {
+    color: #5b9690;
+    background-color: #fafafa
 }
 
 .light:root .z-comment,
 .light:root .z-punctuation.z-definition.z-comment {
     color: #828b8d;
-    font-style: italic;
+    font-style: italic
 }
 
-.light:root .z-variable,
-.light:root .z-string .z-constant.z-other.z-placeholder {
-    color: #80cbc4;
+.light:root .z-string .z-constant.z-other.z-placeholder,
+.light:root .z-variable {
+    color: #80cbc4
 }
 
 .light:root .z-constant.z-other.z-color {
-    color: #ffffff;
+    color: #fff
 }
 
 .light:root .z-invalid,
-.light:root .z-invalid.z-illegal,
-.light:root .z-invalid.z-broken {
-    color: #ffffff;
-    background-color: #e53935;
+.light:root .z-invalid.z-broken,
+.light:root .z-invalid.z-illegal {
+    color: #fff;
+    background-color: #e53935
 }
 
 .light:root .z-invalid.z-unimplemented {
-    color: #ffffff;
-    background-color: #91b859;
+    color: #fff;
+    background-color: #91b859
 }
 
 .light:root .z-invalid.z-deprecated {
-    color: #ffffff;
-    background-color: #7c4dff;
+    color: #fff;
+    background-color: #7c4dff
 }
 
 .light:root .z-keyword,
-.light:root .z-storage.z-type,
-.light:root .z-storage.z-modifier {
-    color: #7c4dff;
+.light:root .z-storage.z-modifier,
+.light:root .z-storage.z-type {
+    color: #7c4dff
 }
 
-.light:root .z-storage.z-type,
-.light:root .z-keyword.z-control {
-    font-style: italic;
+.light:root .z-keyword.z-control,
+.light:root .z-storage.z-type {
+    font-style: italic
 }
 
-.light:root .z-keyword.z-operator,
 .light:root .z-constant.z-other.z-color,
-.light:root .z-punctuation,
+.light:root .z-keyword.z-operator,
+.light:root .z-keyword.z-other.z-substitution,
+.light:root .z-keyword.z-other.z-template,
 .light:root .z-meta.z-tag,
+.light:root .z-punctuation,
 .light:root .z-punctuation.z-definition.z-tag,
-.light:root .z-punctuation.z-separator.z-inheritance.z-php,
-.light:root .z-punctuation.z-definition.z-tag.z-html,
 .light:root .z-punctuation.z-definition.z-tag.z-begin.z-html,
 .light:root .z-punctuation.z-definition.z-tag.z-end.z-html,
+.light:root .z-punctuation.z-definition.z-tag.z-html,
 .light:root .z-punctuation.z-section.z-embedded,
-.light:root .z-keyword.z-other.z-template,
-.light:root .z-keyword.z-other.z-substitution {
-    color: #39adb5;
+.light:root .z-punctuation.z-separator.z-inheritance.z-php {
+    color: #39adb5
 }
 
 .light:root .z-entity.z-name.z-tag,
-.light:root .z-meta.z-tag.z-sgml,
-.light:root .z-markup.z-deleted.z-git_gutter {
-    color: #ff5370;
+.light:root .z-markup.z-deleted.z-git_gutter,
+.light:root .z-meta.z-tag.z-sgml {
+    color: #ff5370
 }
 
 .light:root .z-entity.z-name.z-function,
-.light:root .z-meta.z-function-call,
-.light:root .z-variable.z-function,
-.light:root .z-support.z-function,
 .light:root .z-keyword.z-other.z-special-method,
-.light:root .z-meta.z-block-level {
-    color: #6182b8;
+.light:root .z-meta.z-block-level,
+.light:root .z-meta.z-function-call,
+.light:root .z-support.z-function,
+.light:root .z-variable.z-function {
+    color: #6182b8
 }
 
-.light:root .z-support.z-other.z-variable,
-.light:root .z-string.z-other.z-link {
-    color: #ff5370;
+.light:root .z-string.z-other.z-link,
+.light:root .z-support.z-other.z-variable {
+    color: #ff5370
 }
 
-.light:root .z-constant.z-numeric,
-.light:root .z-constant.z-language,
-.light:root .z-support.z-constant,
 .light:root .z-constant.z-character,
-.light:root .z-variable.z-parameter,
-.light:root .z-keyword.z-other.z-unit {
-    color: #f76d47;
+.light:root .z-constant.z-language,
+.light:root .z-constant.z-numeric,
+.light:root .z-keyword.z-other.z-unit,
+.light:root .z-support.z-constant,
+.light:root .z-variable.z-parameter {
+    color: #f76d47
 }
 
-.light:root .z-string,
-.light:root .z-constant.z-other.z-symbol,
 .light:root .z-constant.z-other.z-key,
+.light:root .z-constant.z-other.z-symbol,
 .light:root .z-entity.z-other.z-inherited-class,
 .light:root .z-markup.z-heading,
 .light:root .z-markup.z-inserted.z-git_gutter,
-.light:root .z-meta.z-group.z-braces.z-curly .z-constant.z-other.z-object.z-key.z-js .z-string.z-unquoted.z-label.z-js {
-    color: #91b859;
+.light:root .z-meta.z-group.z-braces.z-curly .z-constant.z-other.z-object.z-key.z-js .z-string.z-unquoted.z-label.z-js,
+.light:root .z-string {
+    color: #91b859
 }
 
 .light:root .z-entity.z-name.z-class,
 .light:root .z-entity.z-name.z-type.z-class,
-.light:root .z-support.z-type,
+.light:root .z-markup.z-changed.z-git_gutter,
+.light:root .z-meta.z-use.z-php,
 .light:root .z-support.z-class,
 .light:root .z-support.z-orther.z-namespace.z-use.z-php,
-.light:root .z-meta.z-use.z-php,
 .light:root .z-support.z-other.z-namespace.z-php,
-.light:root .z-markup.z-changed.z-git_gutter,
+.light:root .z-support.z-type,
 .light:root .z-support.z-type.z-sys-types {
-    color: #ffb62c;
+    color: #ffb62c
 }
 
 .light:root .z-source.z-css .z-support.z-type,
+.light:root .z-source.z-less .z-support.z-type,
 .light:root .z-source.z-sass .z-support.z-type,
 .light:root .z-source.z-scss .z-support.z-type,
-.light:root .z-source.z-less .z-support.z-type,
 .light:root .z-source.z-stylus .z-support.z-type {
-    color: #8796b0;
+    color: #8796b0
 }
 
 .light:root .z-entity.z-name.z-module.z-js,
 .light:root .z-variable.z-import.z-parameter.z-js,
 .light:root .z-variable.z-other.z-class.z-js {
-    color: #e53935;
+    color: #e53935
 }
 
 .light:root .z-variable.z-language {
     color: #e53935;
-    font-style: italic;
+    font-style: italic
 }
 
 .light:root .z-entity.z-name.z-method.z-js {
-    color: #6182b8;
+    color: #6182b8
 }
 
 .light:root .z-meta.z-class-method.z-js .z-entity.z-name.z-function.z-js,
 .light:root .z-variable.z-function.z-constructor {
-    color: #6182b8;
+    color: #6182b8
 }
 
 .light:root .z-entity.z-other.z-attribute-name {
-    color: #7c4dff;
+    color: #7c4dff
 }
 
-.light:root .z-text.z-html.z-basic .z-entity.z-other.z-attribute-name.z-html,
-.light:root .z-text.z-html.z-basic .z-entity.z-other.z-attribute-name {
+.light:root .z-text.z-html.z-basic .z-entity.z-other.z-attribute-name,
+.light:root .z-text.z-html.z-basic .z-entity.z-other.z-attribute-name.z-html {
     color: #ffb62c;
-    font-style: italic;
+    font-style: italic
 }
 
 .light:root .z-entity.z-other.z-attribute-name.z-class {
-    color: #ffb62c;
+    color: #ffb62c
 }
 
 .light:root .z-source.z-sass .z-keyword.z-control {
-    color: #6182b8;
+    color: #6182b8
 }
 
 .light:root .z-markup.z-inserted {
-    color: #91b859;
+    color: #91b859
 }
 
 .light:root .z-markup.z-deleted {
-    color: #e53935;
+    color: #e53935
 }
 
 .light:root .z-markup.z-changed {
-    color: #7c4dff;
+    color: #7c4dff
 }
 
 .light:root .z-string.z-regexp {
-    color: #39adb5;
+    color: #39adb5
 }
 
 .light:root .z-constant.z-character.z-escape {
-    color: #39adb5;
+    color: #39adb5
 }
 
-.light:root .z-*url*,
 .light:root .z-*link*,
-.light:root .z-*uri* {
-    font-style: underline;
+.light:root .z-*uri*,
+.light:root .z-*url* {
+    font-style: underline
 }
 
 .light:root .z-constant.z-numeric.z-line-number.z-find-in-files {
-    color: #c17e70;
+    color: #c17e70
 }
 
 .light:root .z-entity.z-name.z-filename.z-find-in-files {
-    color: #91b859;
+    color: #91b859
 }
 
 .light:root .z-tag.z-decorator.z-js .z-entity.z-name.z-tag.z-js,
 .light:root .z-tag.z-decorator.z-js .z-punctuation.z-definition.z-tag.z-js {
     color: #6182b8;
-    font-style: italic;
+    font-style: italic
 }
 
 .light:root .z-source.z-js .z-constant.z-other.z-object.z-key.z-js .z-string.z-unquoted.z-label.z-js {
     color: #e53935;
-    font-style: italic;
+    font-style: italic
 }
 
-.light:root .z-source.z-json .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta.z-structure.z-dictionary.z-json .z-string.z-quoted.z-double.z-json,
-.light:root .z-source.z-json .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta.z-structure.z-dictionary.z-json .z-punctuation.z-definition.z-string {
-    color: #91b859;
+.light:root .z-source.z-json .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta.z-structure.z-dictionary.z-json .z-punctuation.z-definition.z-string,
+.light:root .z-source.z-json .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta.z-structure.z-dictionary.z-json .z-string.z-quoted.z-double.z-json {
+    color: #91b859
 }
 
-.light:root .z-source.z-json .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta.z-structure.z-dictionary.z-json .z-string.z-quoted.z-double.z-json,
-.light:root .z-source.z-json .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta.z-structure.z-dictionary.z-json .z-punctuation.z-definition.z-string {
-    color: #7c4dff;
+.light:root .z-source.z-json .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta.z-structure.z-dictionary.z-json .z-punctuation.z-definition.z-string,
+.light:root .z-source.z-json .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta.z-structure.z-dictionary.z-json .z-string.z-quoted.z-double.z-json {
+    color: #7c4dff
 }
 
-.light:root .z-source.z-json .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta.z-structure.z-dictionary.z-json .z-string.z-quoted.z-double.z-json,
-.light:root .z-source.z-json .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta.z-structure.z-dictionary.z-json .z-punctuation.z-definition.z-string {
-    color: #ff5370;
+.light:root .z-source.z-json .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta.z-structure.z-dictionary.z-json .z-punctuation.z-definition.z-string,
+.light:root .z-source.z-json .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta.z-structure.z-dictionary.z-json .z-string.z-quoted.z-double.z-json {
+    color: #ff5370
 }
 
-.light:root .z-source.z-json .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta.z-structure.z-dictionary.z-json .z-string.z-quoted.z-double.z-json,
-.light:root .z-source.z-json .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta.z-structure.z-dictionary.z-json .z-punctuation.z-definition.z-string {
-    color: #6182b8;
+.light:root .z-source.z-json .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta.z-structure.z-dictionary.z-json .z-punctuation.z-definition.z-string,
+.light:root .z-source.z-json .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta.z-structure.z-dictionary.z-json .z-string.z-quoted.z-double.z-json {
+    color: #6182b8
 }
 
-.light:root .z-source.z-json .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta.z-structure.z-dictionary.z-json .z-string.z-quoted.z-double.z-json,
-.light:root .z-source.z-json .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta.z-structure.z-dictionary.z-json .z-punctuation.z-definition.z-string {
-    color: #c17e70;
+.light:root .z-source.z-json .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta.z-structure.z-dictionary.z-json .z-punctuation.z-definition.z-string,
+.light:root .z-source.z-json .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta.z-structure.z-dictionary.z-json .z-string.z-quoted.z-double.z-json {
+    color: #c17e70
 }
 
-.light:root .z-source.z-json .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta.z-structure.z-dictionary.z-json .z-string.z-quoted.z-double.z-json,
-.light:root .z-source.z-json .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta.z-structure.z-dictionary.z-json .z-punctuation.z-definition.z-string {
-    color: #e53935;
+.light:root .z-source.z-json .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta.z-structure.z-dictionary.z-json .z-punctuation.z-definition.z-string,
+.light:root .z-source.z-json .z-meta .z-meta .z-meta .z-meta .z-meta .z-meta.z-structure.z-dictionary.z-json .z-string.z-quoted.z-double.z-json {
+    color: #e53935
 }
 
-.light:root .z-source.z-json .z-meta .z-meta .z-meta .z-meta.z-structure.z-dictionary.z-json .z-string.z-quoted.z-double.z-json,
-.light:root .z-source.z-json .z-meta .z-meta .z-meta .z-meta.z-structure.z-dictionary.z-json .z-punctuation.z-definition.z-string {
-    color: #f76d47;
+.light:root .z-source.z-json .z-meta .z-meta .z-meta .z-meta.z-structure.z-dictionary.z-json .z-punctuation.z-definition.z-string,
+.light:root .z-source.z-json .z-meta .z-meta .z-meta .z-meta.z-structure.z-dictionary.z-json .z-string.z-quoted.z-double.z-json {
+    color: #f76d47
 }
 
-.light:root .z-source.z-json .z-meta .z-meta.z-structure.z-dictionary.z-json .z-string.z-quoted.z-double.z-json,
-.light:root .z-source.z-json .z-meta .z-meta.z-structure.z-dictionary.z-json .z-punctuation.z-definition.z-string {
-    color: #ffb62c;
+.light:root .z-source.z-json .z-meta .z-meta.z-structure.z-dictionary.z-json .z-punctuation.z-definition.z-string,
+.light:root .z-source.z-json .z-meta .z-meta.z-structure.z-dictionary.z-json .z-string.z-quoted.z-double.z-json {
+    color: #ffb62c
 }
 
-.light:root .z-source.z-json .z-meta.z-structure.z-dictionary.z-json .z-string.z-quoted.z-double.z-json,
-.light:root .z-source.z-json .z-meta.z-structure.z-dictionary.z-json .z-punctuation.z-definition.z-string {
-    color: #7c4dff;
+.light:root .z-source.z-json .z-meta.z-structure.z-dictionary.z-json .z-punctuation.z-definition.z-string,
+.light:root .z-source.z-json .z-meta.z-structure.z-dictionary.z-json .z-string.z-quoted.z-double.z-json {
+    color: #7c4dff
 }
 
-.light:root .z-text.z-html.z-markdown,
-.light:root .z-punctuation.z-definition.z-list_item.z-markdown {
-    color: #80cbc4;
+.light:root .z-punctuation.z-definition.z-list_item.z-markdown,
+.light:root .z-text.z-html.z-markdown {
+    color: #80cbc4
 }
 
 .light:root .z-text.z-html.z-markdown .z-markup.z-raw.z-inline {
-    color: #7c4dff;
+    color: #7c4dff
 }
 
 .light:root .z-text.z-html.z-markdown .z-punctuation.z-definition.z-raw.z-markdown {
-    color: #e7eaec;
+    color: #e7eaec
 }
 
 .light:root .z-markdown.z-heading,
 .light:root .z-markup.z-heading,
 .light:root .z-markup.z-heading .z-entity.z-name,
 .light:root .z-markup.z-heading.z-markdown .z-punctuation.z-definition.z-heading.z-markdown {
-    color: #91b859;
+    color: #91b859
 }
 
 .light:root .z-markup.z-italic {
     color: #ff5370;
-    font-style: italic;
+    font-style: italic
 }
 
 .light:root .z-markup.z-bold,
 .light:root .z-markup.z-bold .z-string {
     color: #ff5370;
-    font-weight: bold;
+    font-weight: 700
 }
 
 .light:root .z-markup.z-bold .z-markup.z-italic,
-.light:root .z-markup.z-italic .z-markup.z-bold,
-.light:root .z-markup.z-quote .z-markup.z-bold,
 .light:root .z-markup.z-bold .z-markup.z-italic .z-string,
+.light:root .z-markup.z-italic .z-markup.z-bold,
 .light:root .z-markup.z-italic .z-markup.z-bold .z-string,
+.light:root .z-markup.z-quote .z-markup.z-bold,
 .light:root .z-markup.z-quote .z-markup.z-bold .z-string {
-    font-weight: bold;
-    font-style: italic;
+    font-weight: 700;
+    font-style: italic
 }
 
 .light:root .z-markup.z-underline {
     color: #f76d47;
-    font-style: underline;
+    font-style: underline
 }
 
 .light:root .z-markup.z-quote .z-punctuation.z-definition.z-blockquote.z-markdown {
     color: #e7eaec;
-    background-color: #e7eaec;
+    background-color: #e7eaec
 }
 
 .light:root .z-string.z-other.z-link.z-title.z-markdown {
-    color: #6182b8;
+    color: #6182b8
 }
 
 .light:root .z-string.z-other.z-link.z-description.z-title.z-markdown {
-    color: #7c4dff;
+    color: #7c4dff
 }
 
 .light:root .z-constant.z-other.z-reference.z-link.z-markdown {
-    color: #ffb62c;
+    color: #ffb62c
 }
 
 .light:root .z-markup.z-raw.z-block {
-    color: #7c4dff;
+    color: #7c4dff
 }
 
 .light:root .z-markup.z-raw.z-block.z-fenced.z-markdown {
-    background-color: #90a4ae;
+    background-color: #90a4ae
 }
 
 .light:root .z-punctuation.z-definition.z-fenced.z-markdown {
-    background-color: #90a4ae;
+    background-color: #90a4ae
 }
 
 .light:root .z-markup.z-raw.z-block.z-fenced.z-markdown,
-.light:root .z-variable.z-language.z-fenced.z-markdown,
-.light:root .z-punctuation.z-section.z-class.z-end {
-    color: #80cbc4;
+.light:root .z-punctuation.z-section.z-class.z-end,
+.light:root .z-variable.z-language.z-fenced.z-markdown {
+    color: #80cbc4
 }
 
 .light:root .z-variable.z-language.z-fenced.z-markdown {
-    color: #e7eaec;
+    color: #e7eaec
 }
 
 .light:root .z-text.z-html.z-markdown .z-punctuation.z-definition {
-    color: #ccd7da;
+    color: #ccd7da
 }
 
 .light:root .z-text.z-html.z-markdown .z-meta.z-disable-markdown .z-punctuation.z-definition {
-    color: #39adb5;
+    color: #39adb5
 }
 
 .light:root .z-meta.z-separator {
     color: #e7eaec;
     background-color: #90a4ae;
-    font-weight: bold;
+    font-weight: 700
 }
 
 .light:root .z-acejump.z-label.z-blue {
-    color: #ffffff;
-    background-color: #6182b8;
+    color: #fff;
+    background-color: #6182b8
 }
 
 .light:root .z-acejump.z-label.z-green {
-    color: #ffffff;
-    background-color: #91b859;
+    color: #fff;
+    background-color: #91b859
 }
 
 .light:root .z-acejump.z-label.z-orange {
-    color: #ffffff;
-    background-color: #f76d47;
+    color: #fff;
+    background-color: #f76d47
 }
 
 .light:root .z-acejump.z-label.z-purple {
-    color: #ffffff;
-    background-color: #7c4dff;
+    color: #fff;
+    background-color: #7c4dff
 }
 
 .light:root .z-sublimelinter.z-mark.z-warning {
-    color: #ffb62c;
+    color: #ffb62c
 }
 
 .light:root .z-sublimelinter.z-gutter-mark {
-    color: #ffffff;
+    color: #fff
 }
 
 .light:root .z-sublimelinter.z-mark.z-error {
-    color: #e53935;
+    color: #e53935
 }
 
 .light:root .z-sublimelinter.z-annotations {
-    background-color: #c17e70;
+    background-color: #c17e70
 }
 
 .light:root .z-markup.z-ignored.z-git_gutter {
-    color: #e7eaec;
+    color: #e7eaec
 }
 
 .light:root .z-markup.z-untracked.z-git_gutter {
-    color: #e7eaec;
+    color: #e7eaec
 }
 
 .light:root .z-markup.z-inserted.z-git_gutter {
-    color: #91b859;
+    color: #91b859
 }
 
 .light:root .z-markup.z-changed.z-git_gutter {
-    color: #ffb62c;
+    color: #ffb62c
 }
 
 .light:root .z-markup.z-deleted.z-git_gutter {
-    color: #e53935;
+    color: #e53935
 }
 
 .light:root .z-brackethighlighter.z-default {
-    color: #8796b0;
+    color: #8796b0
 }
 
 .light:root .z-brackethighlighter.z-quote {
-    color: #91b859;
+    color: #91b859
 }
 
 .light:root .z-brackethighlighter.z-unmatched {
-    color: #e53935;
+    color: #e53935
 }
 
 :root:not(.light) {
