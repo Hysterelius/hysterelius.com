@@ -13,6 +13,6 @@ jobs:
         uses: actions/checkout@v2
       # Build static pages w/ Zola
       - name: Build 🏗️
-        uses: Hysterelius/zola-build-action@v1
+        uses: Hysterelius/zola-build-action@v1.0.0
         env:
           CONFIG_FILE: "config.toml"
