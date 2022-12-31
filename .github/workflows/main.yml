@@ -18,3 +18,11 @@ jobs:
         uses: Hysterelius/zola-build-action@v0.16.1
         env:
           CONFIG_FILE: "config.toml"
+        # Deploy to Cloudflare Pages
+      - name: Deploy 🚀
+        uses: cloudflare/pages-action@v1
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          projectName: hysterelius
+          directory: dist
