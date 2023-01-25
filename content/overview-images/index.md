@@ -32,7 +32,7 @@ This post covers the **imghover and img shortcodes**. Images can also be embedde
 ```html
 {{ img(src="ferris-happy.svg" alt="Ferris is Happy" w=600 h=400) }}
 ```
-{{ img(src="ferris-happy.svg" alt="Ferris is Happy" w=600 h=400) }}
+{{ img(src="ferris.svg" alt="Ferris is Happy" w=600 h=400) }}
 
 ## Usage (relative path ./)
 ```rs
