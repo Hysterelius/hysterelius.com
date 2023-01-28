@@ -55,7 +55,7 @@ meta_post = { position = "top", size = "s95", author = true, readtime = false, r
 ## divider:    "&middot;"    "&bull;"    " "
 
 footer_size = "s90"   # size: s95, s90, s85, s80, s75, s70, false(full size)
-footer_credit = false
+footer_credit = true
 #footer_credit_override = '<p class="s90">Powered by <a href="https://www.getzola.org/" target="_blank">Zola</a> &#38; <a href="https://github.com/Jieiku/abridge/" target="_blank">Abridge</a></p>'
 
 #uncomment one of the two lines, or neither, depending on which type of logo you want to use:
@@ -193,7 +193,7 @@ katex_bundle = "katexbundle.min.js"
 ##########################
 # meta/seo/analytic tags
 ##########################
-keywords = "Abridge, Abridge.css, Zola, Theme, Zola Theme, getzola, Semantic Html, Fast, lightweight" # used for the primary site index
+keywords = "Hysterelius, Zola, Blog, Github Blog" # used for the primary site index
 # twitter = "your-user-name" # used for twitter related
 #google = "Your Google Site verification code."
 #bing = "Your Bing Site verification code."
@@ -201,7 +201,7 @@ seo = true # enable or disable seo-related meta tags: opengraph, facebook, twitt
 
 # Footer social links; full options listed in macros/social.html
 [extra.social]
-# feed = true
+feed = true
 mail_encode = true # This obfuscates your email address, javascript is used to decode it at page load.
 # mail = "name@example.com"
 # mastodon = "@your-user-name"
