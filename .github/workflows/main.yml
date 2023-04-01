@@ -19,7 +19,6 @@ jobs:
         uses: shalzz/zola-deploy-action@v0.17.2
         env:
           BUILD_ONLY: true
-          OUT_DIR: dist
         # Deploy to Cloudflare Pages
       - name: Deploy 🚀
         uses: cloudflare/pages-action@v1
@@ -27,4 +26,4 @@ jobs:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           projectName: hysterelius
-          directory: dist
+          directory: public
