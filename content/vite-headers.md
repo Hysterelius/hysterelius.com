@@ -1,6 +1,7 @@
 +++
 title = "Setting headers in Vite"
 date = 2022-12-30
+updated = 2023-04-01
 draft = false
 
 [taxonomies]
@@ -73,14 +74,19 @@ If you want to add it I recommend reading through the [documentation](https://in
 This policy should not break anything on your website, but using policies like `default-src 'self'` can easily break your website.
 So, just test what works.
 
-### Unsafe-inline
+### Hashes
 
-Some CSP policies (`script-src` and `style-src`) prevent the inline loading of resources, which a vue file does natively. So use `unsafe-inline` to try and get the policy to work.
-
+Some CSP policies (`script-src` and `style-src`) prevent the inline loading of resources, which a vue file does natively. So you can define specific hashes that are allowed for the CSP to pass.
 ```js
         // --snip--
         headers: {
-            'Content-Security-Policy': 'script-src: unsafe-inline; style-src: unsafe-inline',
+            'Content-Security-Policy': 'script-src 'self' 'sha256-ljgfRyA+rQLdERYr90sJ9dRLkTYUnUIAHmR1dX6cvmQ='',
             // --snip--
         }
 ```
+#### Generating Hashes
+To generate said hashes, you can use `openssl`, you can either:
+1. Ingest the file: `openssl dgst -sha256 -binary example.js | openssl base64 -A`
+3. Ingest text: `echo -n "Example text" | openssl dgst -sha256 -binary | openssl base64 -A`
+
+These hashes are then put into the CSP like above, if this produces errors. I recommend using Chrome, it tells you the hash you need to put in your CSP in the error console.

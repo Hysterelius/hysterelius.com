@@ -18,7 +18,7 @@ jobs:
       - name: Build 🏗️
         uses: shalzz/zola-deploy-action@v0.17.2
         env:
-          BUILD_DIR: dist
+          OUT_DIR: dist
           BUILD_ONLY: true
         # Deploy to Cloudflare Pages
       - name: Deploy 🚀
