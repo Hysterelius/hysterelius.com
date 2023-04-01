@@ -16,9 +16,10 @@ jobs:
           submodules: true
       # Build static pages w/ Zola
       - name: Build 🏗️
-        uses: Hysterelius/zola-build-action@v0.16.1
+        uses: shalzz/zola-deploy-action@v0.17.2
         env:
-          CONFIG_FILE: "config.toml"
+          BUILD_DIR: dist
+          BUILD_ONLY: true
         # Deploy to Cloudflare Pages
       - name: Deploy 🚀
         uses: cloudflare/pages-action@v1
