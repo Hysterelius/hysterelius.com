@@ -2,7 +2,7 @@
 title = "Markdown and Style Guide"
 description = "Sample article showcasing basic Markdown syntax and formatting for HTML elements."
 date = 2022-05-15
-draft = false
+draft = true
 
 [taxonomies]
 categories = ["Features"]
