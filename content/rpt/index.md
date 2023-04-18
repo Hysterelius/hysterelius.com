@@ -77,12 +77,25 @@ To combat cancer, scientists and oncologists have developed a range of cancer tr
     </div>
     <div class="text">
         <p>
-        Radiopharmaceuticals are a way to combat both the issues with these medications, RPTs can use biological processes, like antibodies, to deliver radiation straight to the cancer. This radiation damages the DNA of cancer so severely that it cannot replicate and dies. As radiation is an electromagnetic wave it can pass through the cells killing cancer around the original targeted cell. This means that RPTs are even more effective on large clumps of cancer, so they can be used fittingly in the late states of cancer. RPTs have been described as “radioactive chemotherapy” as it has the benefits of both therapies. RPTs usually have half-lives of 1 hour so the radiation doesn’t stay in the body for too long, meaning that RPTs need to be produced right before use. 
+            Radiopharmaceuticals are a class of drug which harness radiation's ability to disrupt and destroy cells as radiation destroy DNA which kills the cancer cells by inhibiting growth, upkeep and reproduction. To target the cancer cells, RPTs use biological targets either specific protein intake or specific protein receptors to trick a cancer cell to get concentrated dose of radiation. As only cancer cells exhibit these characteristics of strong growth, reproduction and repair; RPTs are able to successfully target them without effecting body cells.
         </p>
     </div>
 </div>
 
+### The Science
+<div class="image-set">
+    <div>
+        <img src="./img/the-science.gif" alt="A gif showing an RPT rejecting a body cell, then attaching to a cancer cell: destroying it and its neighbours" width="720" height="540">
+    </div>
+</div>
 
+<br>
+
+Radiopharmaceuticals are a way to combat both the issues with these medications, RPTs can use biological processes, like antibodies, to deliver radiation straight to the cancer. This radiation damages the DNA of cancer so severely that it cannot replicate and dies. As radiation is an electromagnetic wave it can pass through the cells killing cancer around the original targeted cell. This means that RPTs are even more effective on large clumps of cancer, so they can be used fittingly in the late states of cancer. RPTs have been described as “radioactive chemotherapy” as it has the benefits of both therapies. RPTs usually have half-lives of 1 hour so the radiation doesn’t stay in the body for too long, meaning that RPTs need to be produced right before use. 
+
+<br>
+
+{{  img(src="./img/components.png" alt="A diagram of the components of RPTs, the targeting and radioactive agents which target a specific part of a cancer cell" w=540 h=405)  }}
 
 ## Benefits
 <div class="image-set sml">
@@ -96,75 +109,109 @@ To combat cancer, scientists and oncologists have developed a range of cancer tr
         <p>Cost effective</p>
     </div>
     <div>
-        <img src="./benefits/eval.gif" alt="Gif of dna breaking apart" width="120" height="120">
+        <img src="./benefits/eval.gif" alt="Gif of a magnifying glass, representing a SPECT analyser, evaluating RPT effectiveness" width="120" height="120">
         <br>
         <p>Self evaluating</p>
     </div>
     <div>
-        <img src="./benefits/gate.gif" alt="Gif of dna breaking apart" width="120" height="120">
+        <img src="./benefits/gate.gif" alt="Gif of an airport-like gate correctly identifying cancer and human cells" width="120" height="120">
         <p>Safe</p>
     </div>
     <div>
-        <img src="./benefits/time.gif" alt="Gif of dna breaking apart" width="120" height="120">
+        <img src="./benefits/time.gif" alt="Gif of a clock moving rapidly" width="120" height="120">
         <br>
         <p>Quick</p>
     </div>
     <div>
-        <img src="./benefits/knowledge.gif" alt="Gif of dna breaking apart" width="120" height="120">
+        <img src="./benefits/knowledge.gif" alt="Gif of a book, representing knowledge" width="120" height="120">
         <br>
         <p>Knowledge base</p>
     </div>
 </div>
 
 #### Effective
-You may be asking yourself were does radiation come into this picture? Well, with radiation, <abbr title="a doctor who specialises in cancer">oncologists</abbr> can actively disrupt cancer cells. As cancer cells cannot commit apoptosis, controlled death, they have to be forcefully be killed. Radiation targets the DNA within the cells, destroying it to such a degree that the cell cannot grow nor replicate - effectively stopping cancer function. Compared to its radiation therapt brethren, <abbr title="radiopharmaceuticals">RPTs</abbr> are able to target large clusters of cells. As they target the cells on their outside, with unidirectional radiation. This does mean that <abbr title="radiopharmaceuticals">RPTs</abbr> are less effective at targetting singular cells, due to the inherent randomness in the radiation path, though is counteracted by the fact it can work effectively in clusters of singular cells, achieving treatment.
+You may be asking yourself were does radiation come into this picture? Well, with radiation, <abbr title="a doctor who specialises in cancer">oncologists</abbr> can actively disrupt cancer cells. As cancer cells cannot commit apoptosis, controlled death, they have to be forcefully be killed. Radiation targets the DNA within the cells, destroying it to such a degree that the cell cannot grow nor replicate - effectively stopping cancer function. Compared to its radiation therapt brethren, RPTs are able to target large clusters of cells. As they target the cells on their outside, with unidirectional radiation. This does mean that RPTs are less effective at targetting singular cells, due to the inherent randomness in the radiation path, though is counteracted by the fact it can work effectively in clusters of singular cells, achieving treatment.
 
 #### Cost effective
 The products that make up radiopharmaceuticals themselves are relatively cheap, as the component products are readily available due to their already high use in the nuclear medicine space.
 
 #### Self evaluating
-Arguably the biggest benefit of <abbr title="radiopharmaceuticals">RPTs</abbr> are the ability to see in **real time** the effectiveness of the treatment, this mean you can tell on the day of the treatment whether another treatment is needed. This reduces the managerial burden and suffering for patients as treatments can be planned ahead for maximum quality of life.
+Arguably the biggest benefit of RPTs are the ability to see in **real time** the effectiveness of the treatment, this mean you can tell on the day of the treatment whether another treatment is needed. This reduces the managerial burden and suffering for patients as treatments can be planned ahead for maximum quality of life.
 
-This benefit all stems from <abbr title="radiopharmaceuticals">RPTs</abbr> evolution from nuclear medicine, a technology that has been around for 90 years! All this means that by either being placed in a SPECT or PET machine, the <abbr title="a doctor who specialises in cancer">oncologist</abbr> can actively monitor your treatment, see if it is working, if there are more outbreaks and plan future doses. This is by far <abbr title="radiopharmaceuticals">RPT's</abbr> biggest strength as they provide real-time, personalised information on treatment success. This can overall benefit patient outcomes and wellbeing.
+This benefit all stems from RPTs evolution from nuclear medicine, a technology that has been around for 90 years! All this means that by either being placed in a SPECT or PET machine, the oncologist can actively monitor your treatment, see if it is working, if there are more outbreaks and plan future doses. This is by far RPT's biggest strength as they provide real-time, personalised information on treatment success. This can overall benefit patient outcomes and wellbeing.
 
-If were the cancer were to 'evolve' per se, the <abbr title="a doctor who specialises in cancer">oncologist</abbr> would be able to tell in real-time that cancer is not responding to the patient. They would then be able to adapt this for the next treatment.
+If were the cancer were to 'evolve' per se, the oncologist would be able to tell in real-time that cancer is not responding to the patient. They would then be able to adapt this for the next treatment.
 
 #### Safe
 Radiopharmaceuticals are specifically designed to interface with only one type of cancer, through a biological linking device such as an antibody or a molecule as they are biological in nature, they can be adapted to the ever evolving cancer. This specific interface increases accuracy as it is less likely to connect with a body cell.
 
 #### Quick
-Compared to chemotherapy, <abbr title="radiopharmaceuticals">RPTs</abbr> are far quicker as they rely less on biological mechanism to <u>transport</u> the medication, instead they go straight to the cancer environment determined by nuclear imaging through intravenous methods. This means that <abbr title="radiopharmaceuticals">RPTs</abbr> are able to quickly travel to target sites and treat the cancer. While chemotherapy can become a laborious process for the patient. Chemotherapy requires heavy modelling to understand the biological delivery mechanisms, this means that they only have success rate of targeted biological agents within clinical trials is only 3%!   
+Compared to chemotherapy, RPTs are far quicker as they rely less on biological mechanism to <u>transport</u> the medication, instead they go straight to the cancer environment determined by nuclear imaging through intravenous methods. This means that RPTs are able to quickly travel to target sites and treat the cancer. While chemotherapy can become a laborious process for the patient. Chemotherapy requires heavy modelling to understand the biological delivery mechanisms, this means that they only have success rate of targeted biological agents within clinical trials is only 3%!   
 
 #### Knowledge base
-yes
+As established RPTs are closely linked to their radiation therapy cousins, with the 90 years of progress on radiation therapy this work can carry over into the RPT ecosystem. This means that when RPT development starts to ramp up, all this pre-existing knowledge can be transferred over to make quick progress on RPT development. This also means that there is pre-existing infrastructure to deal with the complex and nuanced nature of RPT, there is also infrastructure to safely create, store and manage radioactive components within hospitals.
 
+<br>
 
-Compared to both radiation therapy and chemotherapy, <abbr title="radiopharmaceuticals">RPTs</abbr> are the clear winner. In contrast to radiation therapy, <abbr title="radiopharmaceuticals">RPTs</abbr> are able to target large clusters of cells - effectively targeting late stages of cancer. While 
-
-RPT cancer treatment has many benefits. There is a large knowledge base around radioactive cancer treatments, helping oncologists adapt. RPTs have high accuracy, rarely targeting normal cells. Compared to chemo, RPTs can quickly saturate cancer sites and only need 1 to 2 rounds to fully treat the cancer. This medication itself is relatively cheap to produce. Arguably the biggest benefit, RPTs provide real-time feedback on the effectiveness of the cancer therapy. As they are based off radiotracers, they produce low-frequency radiation that can be picked up by non-invasive scans (SPECT) to see the effectiveness of the treatments. 
+Compared to both radiation therapy and chemotherapy, RPTs are the clear winner. In contrast to radiation therapy, RPTs are able to target large clusters of cells - effectively targeting late stages of cancer. While compared to chemotherapy, RPTs are more effective at quickly seeking and targetting cancer. All of these factors, improve cancer patient outcomes by increasing efficiency, wellbeing and reliability.
 
  
 ## Limitations
+<div class="image-set sml">
+    <div>
+        <img src="./limits/cyclotron.gif" alt="Gif of a machine that makes RPTs" width="120" height="120">
+        <p>Administration</p>
+    </div>
+    <div>
+        <img src="./limits/expense.gif" alt="Gif of a floating money symbol, representing cost" width="120" height="120">
+        <br>
+        <p>Cost</p>
+    </div>
+    <div>
+        <img src="./limits/news.gif" alt="Gif of news badly reacting to RPTs" width="120" height="120">
+        <br>
+        <p>Public stigma</p>
+    </div>
+    <div>
+        <img src="./limits/printing.gif" alt="Gif of a printer rapidly spewing out paper, representing research needed" width="120" height="120">
+        <p>Research</p>
+    </div>
+</div>
+
+#### Administration
+There is a lot administration needed to keep a **radioactive** product going to patients. There are concerns on radiation management and safety. There needs to be new procedures developed to manage RPTs. To create RPTs, expensive machinery has to be used, as it is complex: people have to be trained on the machines to control them.
+
+#### Cost
+RPTs do need costly equipment, they require cyclotrons, rare radio isotopes and SPECT imaging machines. Giving costs of the tens of millions for equipment alone, this means it can be unreachable for developing countries and their healthcare system. This creates a healthcare disparity within the global cancer treatment system.
+
+#### Public stigma
+With any radiation based treatment, there is an inherent negative stigma for these sort of products. Radiation is a scary concept for many people and the idea of radiation being inside you can seem even scarer. Education is needed to encourage positive outlooks upon RPTs and to encourage its benefits.
+
+#### Research
+There needs to be a lot more research before RPTs are able to be used in the general medical practise. Even though they come with 90 years of history, we are only now understanding how they interact with the body especially from inside. Think of all the things that have to go right: the <u>targeting agent</u> has to be designed to only target the cancer cell, be able to be produced in large quantities — accurately and be able to adapt to the changing nature of cancer. The <u>linker</u> has to be able to hold onto the radioactive agent tight enough so it doesn't get loose in the body but loose enough so it easily detaches. Then the <u>radioactive agent</u> has to have a long enough half-life that it can be produced and injected into the body quickly though short enough so it does not cause havoc within the body. This radioactive agent has to be readily available, be neither too strong or weak and be able to be focus fired at the cancer cell. There has to be a lot of research done to get RPTs right the first time, with dedicated teams with time and effort, a medicine that could save the lives of millions could be produced. 
+
+<br>
+
 RPTs do come with some inherent limitations. There is a negative stigma associated with radiation and especially ingested radiation, impacting RPT development. RPTs are complex to manufacture, requiring hospitals to make them on site due to their short half-life. They need a large upfront investment as they require particle accelerators. RPTs are also complex to design, requiring oncologists to consider all interactions with the body.  RPTs have administrative issues as they are radioactive and need special bureaucratic procedures. 
 
  
 ## Implications
-As shown, there are clear implications for RPTs as a novel way to treat cancer. RPTs have the potential to revolutionise the way that cancers are treated, by selectively introducing radiation to cancer cells so much that it kills them while minimising the impact to the regular cells around it. 
+Radiopharmaceutical therapy has the potential to revolutionise our current cancer treatment. Due to its unique ability to quickly and accurately target individual cells with directed, potent doses of radiation. One study concluded that it led to an 80% reduction in cancer related deaths!
 
-One study concluded that this therapy led to an 80% reduction in cancer related deaths. RPTs will be able to reduce the trauma for families and friends as their loved ones have a higher chance of survival. 
+Compared to radiation and chemotherapy, it is better for the patient with the shorter duration, lower pain and more individualised treatment. It also is a safer treatment as it neither directing powerful radiation through the patient or relying solely on biological pathways we do not know much about.
 
  
 ## Current state
-So, you’ve probably been wondering this whole time why I haven’t heard of RPTs until now? RPTs have yet to be introduced into standard cancer therapy due to the associated complexity. This therapy needs to work effectively for all patients, and it must be verified it won’t cause damage to normal cells. With RPTs relying on complex equipment, development is therefore slow. More funding and research will be needed to develop this therapy in its entirety. The RPT industry is relatively new and only a small number of scientists are researching them. Successful clinical use of RPTs will require faster adoption and evaluation from all parties. 
+The burning question in the room is why RPT have yet to be introduced into any standard cancer treatment. The main drawback is the complexity, there are a lot of moving parts to get RPT to work. You have to get radioactive isotopes, bind it to the correct targeting agent, set the patient up under a SPECT machine all in the span of just an hour. Then the research has to be developed to support this sort of infrastructure: oncologists and radiologists need to work together to create a truly cohesive product. There needs to be more funding and research to purchase the equipment and train the personnel needed to accelerate the field for the 21st century.
 
 
-Radiopharmaceutical therapy has the potential to revolutionise our world as they provide oncologists a novel and effective way to treat cancer in 21st century. RPTs promise to decrease the mortality of cancer. Thanks.
+Radiopharmaceutical therapy has the potential to revolutionise our world as they provide doctors a novel and effective way to treat cancer in 21st century.
 
 <hr>
 
 _Though I make every effort to try supply accurate information and terminology, I am no means a trained medical professional in any capacity. Data current as of September 2022._
 
-_Artistic license has been taken in the GIFs._
+_Artistic license has been taken with the GIFs._
 
 <header>
     <nav>
@@ -173,7 +220,5 @@ _Artistic license has been taken in the GIFs._
         </ul>
     </nav>
 </header>
-
-(c) Hysterelius, 2023
 
 {{ img(src="./img/end.gif" alt="A final image showing RPTs in action" w=1920 h=1080) }}

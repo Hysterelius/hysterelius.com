@@ -2033,3 +2033,7 @@ code thead tr {
 .sml {
     gap: 1rem;
 }
+
+.text-massive {
+    font-size: clamp(160px, 30vw, 250px);
+}
