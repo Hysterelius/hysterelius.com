@@ -3,3 +3,4 @@ sass/
 netlify.toml
 themes/
 dist/
+node_modules/
