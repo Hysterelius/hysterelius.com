@@ -6,10 +6,13 @@ draft = false
 
 [taxonomies]
 categories = ["Features"]
-tags = ["twemoji", "kitty", "kitty terminal", "kitty terminal emoji", "twitter emoji"]
+tags = ["twemoji", "kitty"]
+
+[extra]
+keywords = "twemoji kitty kitty terminal kitty terminal emoji twitter emoji"
 +++
 
-Quick post on how to use twitter emoji in the [Kitty terminal](https://sw.kovidgoyal.net/kitty/).
+Quick post on how to use twitter emoji in the [Kitty terminal](https://sw.kovidgoyal.net/kitty/). 🖥️✨
 
 <!-- more -->
 
@@ -96,3 +99,8 @@ Also, check in the `~/.config/fontconfig/fonts.conf` file that this line is in t
 ```
 
 Reload to confirm changes: `fc-cache -f -v`
+
+---
+### PPS:
+
+To get total twemoji across your system you can use <https://github.com/13rac1/twemoji-color-font> to have a more complete experience.
