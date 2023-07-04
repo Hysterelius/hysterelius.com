@@ -17,8 +17,6 @@ To begin, ensure that you have the twemoji font installed from the AUR Twemoji p
 
 Once you have acquired the package, extract the .tff file from the downloaded directory and proceed to install it through your preferred font manager.
 
-To make this new Twemoji font the default (based off this [StackExchange answer](https://askubuntu.com/questions/1161516/ubuntu-18-04-gnome-3-28-how-to-change-default-emoji-font-noto-color-emoji)) go to your `/etc/fonts/conf.d/60-generic.conf` file:
-
 Now, to set the new Twemoji font as the default option (following the advice from this [StackExchange answer](https://askubuntu.com/questions/1161516/ubuntu-18-04-gnome-3-28-how-to-change-default-emoji-font-noto-color-emoji)), navigate to the `/etc/fonts/conf.d/60-generic.conf` file.
 
 Locate the following section within the file:
