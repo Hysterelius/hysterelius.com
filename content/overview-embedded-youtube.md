@@ -1,12 +1,11 @@
 +++
-title = "Embedded Youtube Videos"
+title = "Embed Youtube Video"
 description = "Sample article showcasing a custom Zola shortcode for embedding Youtube Videos into your pages."
 date = 2021-05-08
 draft = true
 
 [taxonomies]
-categories = ["Features"]
-tags = ["shortcodes","video"]
+tags = ["Features","Shortcodes","Video"]
 [extra]
 keywords = "Video, Shortcodes, Embed, Embedded, Youtube"
 +++
@@ -16,7 +15,11 @@ Zola has many shortcodes, and new are easily added, this example shows youtube.
 
 ## Youtube
 
-with `yt(id="the_id_here")`
+### Usage
+
+```rs
+{{/* youtube(id="32gyFIWecuw") */}}
+```
 
 - `id`: the video id (mandatory)
 - `playlist`: the playlist id (optional)
@@ -25,4 +28,8 @@ with `yt(id="the_id_here")`
 - `title` - set alt title for the iframe (optional, defaults to "Youtube")
 - `cookie` - set to "true" if you want tracking cookies, otherwise it defaults to false.
 
-{{ yt(id="32gyFIWecuw") }}
+### Output
+```html
+{{ youtube(id="32gyFIWecuw") }}
+```
+{{ youtube(id="32gyFIWecuw") }}
