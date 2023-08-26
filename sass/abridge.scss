@@ -133,7 +133,7 @@
 
   /// These lines specify the fonts to add.
   //$fontExt-Main: (ExampleFont1, "Example Font 2"),// MAIN font(s) to add
-  $fontExt-Code: (JetBrainsMono, "JetBrains Mono"),// CODE font(s) to add
+  $fontExt-Code: ("JetBrains Mono"),// CODE font(s) to add
 
   /// If relying on installed fonts alone, then the above is all you need, if the visiting system has the intended font installed then it will use it!
   /// However, if you want to load the Font File resource to ensure it is loaded if they do not have it, then use @use at the VERY Bottom of this file.
