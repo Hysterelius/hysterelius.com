@@ -129,11 +129,11 @@
 
   /// If you want to prepend the font list, then use null instead:
   //$findFont-Main: null,         // ← PREPEND custom MAIN font(s)
-  //$findFont-Code: null,         // ← PREPEND custom CODE font(s)
+  $findFont-Code: null,         // ← PREPEND custom CODE font(s)
 
   /// These lines specify the fonts to add.
   //$fontExt-Main: (ExampleFont1, "Example Font 2"),// MAIN font(s) to add
-  //$fontExt-Code: (ExampleCode1, "Example Code 2"),// CODE font(s) to add
+  $fontExt-Code: (JetBrainsMono, "JetBrains Mono"),// CODE font(s) to add
 
   /// If relying on installed fonts alone, then the above is all you need, if the visiting system has the intended font installed then it will use it!
   /// However, if you want to load the Font File resource to ensure it is loaded if they do not have it, then use @use at the VERY Bottom of this file.
@@ -195,5 +195,6 @@
  *     make sure to have the relevant woff2 fonts in your static/fonts folder
  *   I measured the least Cumulative Layout Shift with: Roboto, Lato, Arimo
  *****************************************************************************/
+@use "fonts/JetBrainsMono";
 //@use "fonts/Roboto";
 //@use "fonts/Arimo";
