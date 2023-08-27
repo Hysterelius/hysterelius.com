@@ -6,7 +6,8 @@ on:
       - main
     paths-ignore: # Only runs workflow when blog specific files are updated
       - '.github/**' # Anytime a workflow file is updated
-      - '!(*.toml)' # and anytime a non-toml file is updated (in root-diectory)
+      - '*' # ignores all root directory files
+      - '!(*.toml)' # except a toml file
 name: Build Zola website
 jobs:
   build-bundle-deploy:
