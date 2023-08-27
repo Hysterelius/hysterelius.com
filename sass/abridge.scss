@@ -71,7 +71,7 @@
 
   /// The colors below can be overrided individually as needed.
 
-  /// Dark Colors
+  /// Dark Colours
   $f1d: #e9e0e4,// Font Color Primary
   $f2d: #d0c3cc,// Font Color Headers
   $c1d: #1e1a1e,// Background Color Primary
@@ -84,7 +84,7 @@
   //$cgd: #593,// ins green, success
   //$crd: #e33,// del red, errors
 
-  /// Light Colors
+  /// Light Colours
   $f1: #1e1a1e,// Font Color Primary
   $f2: #4d444c,// Font Color Headers
   $c1: #fffbff,// Background Color Primary
@@ -97,31 +97,33 @@
   //$cg: #373,// ins green, success
   //$cr: #d33,// del red, errors
 
-  /// Dark Syntax Colors
-  //$h0d: #191919,// background color
-  //$h1d: #ddd,// unstyled text
-  //$h2d: #888,// comments
-  //$h3d: #e65,// red, support function
-  //$h4d: #e83,// orange, punctuation, constant, variable, json-key
-  //$h5d: #eb6,// tan, entity/function name
-  //$h6d: #ac3,// green, string
-  //$h7d: #8db,// teal, escape character
-  //$h8d: #6ae,// blue, declaration, tag, property
-  //$h9d: #d6e,// purple, operators
-  //$had: 160%,// mark/highlight line
+  // VSCode material theme colours
 
-  /// Light Syntax Colors
-  //$h0: #f7f7f7,// background color
-  //$h1: #222,// unstyled text
-  //$h2: #666,// comments
-  //$h3: #a21,// red, support function
-  //$h4: #930,// orange, punctuation, constant, variable, json-key
-  //$h5: #a50,// tan, entity/function name
-  //$h6: #350,// green, string
-  //$h7: #286,// teal, escape character
-  //$h8: #059,// blue, declaration, tag, property
-  //$h9: #a3c,// purple, operators
-  //$ha: 92%,// mark/highlight line
+  /// Dark Syntax Colours
+  $h0d: #212121,// background color
+  $h1d: #EEFFFF,// unstyled text
+  $h2d: #545454,// comments
+  $h3d: #f07178,// red, support function
+  $h4d: #F78C6C,// orange, punctuation, constant, variable, json-key
+  $h5d: #FFCB6B,// tan, entity/function name
+  $h6d: #C3E88D,// green, string
+  $h7d: #89DDFF,// teal, escape character
+  $h8d: #82AAFF,// blue, declaration, tag, property
+  $h9d: #C792EA,// purple, operators
+  $had: 160%,// mark/highlight line
+
+  /// Light Syntax Colours
+  // $h0: #FAFAFA,// background color
+  // $h1: #222,// unstyled text
+  // $h2: #5d6a70,// comments
+  // $h3: #E53935,// red, support function
+  // $h4: #F76D47,// orange, punctuation, constant, variable, json-key
+  // $h5: #916b53,// tan, entity/function name
+  // $h6: #91B859,// green, string
+  // $h7: #39ADB5,// teal, escape character
+  // $h8: #6182B8,// blue, declaration, tag, property
+  // $h9: #FF5370,// purple, operators
+  // $ha: 92%,// mark/highlight line
 
   /// These lines find the spot at which to insert your appended fonts.
   //$findFont-Main: "Segoe UI",     // ← APPEND custom MAIN font(s) AFTER this
