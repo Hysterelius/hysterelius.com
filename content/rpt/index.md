@@ -213,12 +213,12 @@ _Though I make every effort to try supply accurate information and terminology, 
 
 _Artistic license has been taken with the GIFs._
 
-<header>
-    <nav>
-        <ul>
-            <li><a href="./bibliography/">Bibliography 📚 &#62;</a></li>
-        </ul>
+<p>
+    <nav style="font-size: 1.2rem">
+        <!-- <ul> -->
+            <a href="./bibliography/">Bibliography 📚 &#62;</a>
+        <!-- </ul> -->
     </nav>
-</header>
+</p>
 
 {{ img(src="./img/end.gif" alt="A final image showing RPTs in action" w=1920 h=1080) }}
