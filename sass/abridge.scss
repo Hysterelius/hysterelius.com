@@ -76,11 +76,11 @@
   $f2d: #d0c3cc,// Font Color Headers
   $c1d: #1e1a1e,// Background Color Primary
   $c2d: #4d444c,// Background Color Secondary
-  //$c3d: #333,// Table Rows, Block quote edge, Borders
-  //$c4d: #777,// Disabled Buttons, Borders, mark background
+  // $c3d: #333,// Table Rows, Block quote edge, Borders
+  $c4d: #888,// Disabled Buttons, Borders, mark background
   $a1d: #f8acff,// link color
-  $a2d: #f6b8ae,// link hover/focus color
-  //$a3d: #f90,// link h1-h2 hover/focus color
+  $a2d: #f6acf5,// link hover/focus color
+  $a3d: #f081e1,// link h1-h2 hover/focus color
   //$cgd: #593,// ins green, success
   //$crd: #e33,// del red, errors
 
@@ -90,10 +90,10 @@
   $c1: #fffbff,// Background Color Primary
   $c2: #ecdfe8,// Background Color Secondary
   //$c3: #ddd,// Table Rows, Block quote edge, Borders
-  //$c4: #555,// Disabled Buttons, Borders, mark background
+  $c4: #677,// Disabled Buttons, Borders, mark background
   $a1: #8f3a9d,// link color
   $a2: #6b586b,// link hover/focus color
-  $a3: #82524b,// link h1-h2 hover/focus color
+  $a3: #824a81,// link h1-h2 hover/focus color
   //$cg: #373,// ins green, success
   //$cr: #d33,// del red, errors
 
@@ -189,6 +189,8 @@
   //$misc: false,
   //$grid: false,//Infinity Grid, column based layouts.
   //$syntax: true,//syntax highlighting for code blocks
+
+
 );
 /******************************************************************************
  *   FONTS - Abridge by default uses the System Font Stack
@@ -200,3 +202,34 @@
 @use "fonts/JetBrainsMono";
 //@use "fonts/Roboto";
 //@use "fonts/Arimo";
+
+  // ##################################################################
+  // Custom Layout CSS
+  // ##################################################################
+  .image-set {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.image-set div {
+    flex: 0 1 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-set .text {
+    flex: 1 1 400px;
+    display: block;
+    /* min-width: 400px; */
+}
+
+.sml {
+    gap: 1rem;
+}
+
+.text-massive {
+    font-size: clamp(160px, 30vw, 250px);
+}
