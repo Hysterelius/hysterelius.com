@@ -31,7 +31,7 @@ Locate the following section within the file:
 			<family>Noto Color Emoji</family> <!-- Google -->
 			<family>Apple Color Emoji</family> <!-- Apple -->
 			<family>Segoe UI Emoji</family> <!-- Microsoft -->
-            <family>Twitter Color Emoji</family> <!-- Twitter -->
+			<family>Twitter Color Emoji</family> <!-- Twitter -->
 			<family>EmojiOne Mozilla</family> <!-- Mozilla -->
 			<!-- Third-Party fonts -->
 			<family>Emoji Two</family>
@@ -49,10 +49,11 @@ Then edit it to look like this:
 		<family>emoji</family>
 		<prefer>
 			<!-- System fonts -->
-			<family>Twemoji</family> <!-- Twitter -->
+			<family>Twemoji</family> <!-- Twemoji -->
 			<family>Noto Color Emoji</family> <!-- Google -->
 			<family>Apple Color Emoji</family> <!-- Apple -->
 			<family>Segoe UI Emoji</family> <!-- Microsoft -->
+			<family>Twitter Color Emoji</family> <!-- Twitter -->
 			<family>EmojiOne Mozilla</family> <!-- Mozilla -->
 			<!-- Third-Party fonts -->
 			<family>Emoji Two</family>
