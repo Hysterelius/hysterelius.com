@@ -11,7 +11,7 @@ build_search_index = true
 
 title = "Hysterelius"
 description = "Hysterelius, a website for exploration"
-generate_feed = true
+generate_feeds = true
 taxonomies = [
     {name = "categories", feed = true},
     {name = "tags", feed = true},
