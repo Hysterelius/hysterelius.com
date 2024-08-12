@@ -1114,7 +1114,7 @@ pre code[data-lang]::before {
     font-size: .8rem
 }
 
-:root:not(.light) code table mark {
+:root:not(.light) code mark {
     filter: brightness(120%)
 }
 
@@ -1123,7 +1123,7 @@ code table {
     margin: 0
 }
 
-code table mark {
+code mark {
     display: block;
     background-color: var(--c2);
     color: unset;
@@ -1255,7 +1255,7 @@ code thead tr {
 :root:not(.light) .z-markup.z-changed.z-git_gutter,
 :root:not(.light) .z-meta.z-use.z-php,
 :root:not(.light) .z-support.z-class,
-:root:not(.light) .z-support.z-orther.z-namespace.z-use.z-php,
+:root:not(.light) .z-support.z-other.z-namespace.z-use.z-php,
 :root:not(.light) .z-support.z-other.z-namespace.z-php,
 :root:not(.light) .z-support.z-type,
 :root:not(.light) .z-support.z-type.z-sys-types {
@@ -1988,7 +1988,7 @@ code thead tr {
     --c1: #1e1a1e;
     --c2: #4d444c;
     --c3: #333;
-    --c4: #888;
+    --c4: rgb(136, 136, 136);
     --a1: #f8acff;
     --a2: #f6b8ae;
     --a3: #f90;
@@ -2002,7 +2002,7 @@ code thead tr {
     --c1: #fffbff;
     --c2: #ecdfe8;
     --c3: #ddd;
-    --c4: #677;
+    --c4: rgb(102, 119, 119); 
     --a1: #8f3a9d;
     --a2: #6b586b;
     --a3: #82524b;
