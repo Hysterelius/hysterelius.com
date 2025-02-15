@@ -12,7 +12,7 @@ series = "linux"
 +++
 
 In this series, I detail my Linux setup and how it has progressed to give me my best development environment possible. I will be detailing my setup for Fedora and Pop!_OS, as well as any other distributions I may try in the future. I will also be providing some hints on how to make your own setup.
-
+<!-- more -->
 ## Pre-historic Linux 🦖
 Originally I choose my Linux distro based upon most popular which at the time (2019) was **Ubuntu**, at that served me very well however this was installed on my old Toshiba laptop - like 2003 old, so not the crème de la crème. This coincided when I was doing most of my Python development, and it worked... until one day when I went to go and upgrade my `Python` version, it was named `Python3` and I was like _"Why do I know have to have two Python versions?!? One is enough"_, so I did the _smart thing_ and deleted the old `Python` and renamed the `Python3` to `Python` which totally bricked my terminal which is pretty crucial to software development. As this was basically an e-waste laptop I wasn't too bothered to fix it.
 

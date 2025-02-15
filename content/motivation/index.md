@@ -13,7 +13,7 @@ keywords = "Motivation, developer, programming, software, engineering"
 Ah, motivation, often mimicked but never copied.
 
 Its secret formula driving the engines of our minds.
-
+<!-- more -->
 ## My motivation
 I have found it hard in recent years to keep motivation for certain things, especially for my programming projects, that's why my commit graph looks like this:
 
