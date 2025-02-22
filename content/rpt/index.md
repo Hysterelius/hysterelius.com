@@ -12,10 +12,11 @@ toc = true
 keywords = "RPT, Radiopharmaceutical Therapy, Cancer therapy, Radiopharmaceuticals"
 +++
 
+Radiopharmaceutical therapy (RPTs), is a novel way to treat a horrific disease: cancer, through modern breakthroughs scientists are able to treat
+<!-- more -->
+
 ## Introduction
 
-Radiopharmaceutical therapy also known as RPTs, is a novel way to treat a horrific disease: cancer. 
-<!-- more -->
 Based on a technology that has been around for 90 years, nuclear medicine are now becoming full-on cancer treatments. Radiopharmaceuticals provide a way for cancer specialists, oncologists, to target cancer cells directly with radiation. This targeted radiation is both more accurate and less damaging to the patient. RPTs use the bodies’ natural processes to target cancer, giving greater accuracy and reliability.
 
 ## Meet Cancer
