@@ -13,7 +13,7 @@ jobs:
     steps:
       # Check-out repository under $GITHUB_WORKSPACE
       - name: Checkout 📋
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           submodules: true
       # Build static pages w/ Zola
@@ -23,9 +23,9 @@ jobs:
           BUILD_ONLY: true
         # Deploy to Cloudflare Pages
       - name: Deploy 🚀
-        uses: cloudflare/pages-action@v1
+        uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          projectName: ${{ secrets.PROJECT_NAME }}
-          directory: public
+          command: pages deploy public --profect-name=${{ secrets.PROJECT_NAME }}
+
