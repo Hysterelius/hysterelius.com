@@ -16,8 +16,8 @@
   "dependencies": {
     "fast-toml": "^0.5.4",
     "jsonminify": "^0.4.2",
-    "pagefind": "^1.1.1",
-    "replace-in-file": "^8.2.0",
+    "pagefind": "^1.3.0",
+    "replace-in-file": "^8.3.0",
     "uglify-js": "^3.19.3"
   }
 }
