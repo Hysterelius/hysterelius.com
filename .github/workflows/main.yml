@@ -21,6 +21,12 @@ jobs:
         uses: shalzz/zola-deploy-action@v0.20.0
         env:
           BUILD_ONLY: true
+      # Setup pnpm for wrangler
+      - name: Setup pnpm ⚙️
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10
+          
         # Deploy to Cloudflare Pages
       - name: Deploy 🚀
         uses: cloudflare/wrangler-action@v3
