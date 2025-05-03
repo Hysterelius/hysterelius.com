@@ -16,6 +16,8 @@ Lightning CSS ⚡ is a way to minify CSS files and ensure backwards compatibilit
 
 This blog post will describe how to read a CSS file from disk then bundle, minify and compile it for a range of different CSS versions.
 
+<!--more-->
+
 ## Installing Lightning CSS
 
 We need to first install lightningcss into our Rust project, as it is still beta at the time of writing - the installing process is a bit different.
