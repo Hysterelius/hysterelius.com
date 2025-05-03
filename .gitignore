@@ -4,3 +4,4 @@ themes/
 dist/
 node_modules/
 pnpm-lock.yaml
+.vscode/
