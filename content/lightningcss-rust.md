@@ -9,7 +9,7 @@ tags = ["rust", "web"]
 
 [extra]
 toc = true
-keywords = "CSS lightningcss rust bundler minifier script web development"
+keywords = "CSS lightningcss rust bundler minifier script web development transpiler browser targets browerslist"
 +++
 
 Lightning CSS ⚡ is a way to minify CSS files and ensure backwards compatibility with a range of browsers. This blog post will demonstrate how to use Lightning CSS in Rust to manipulate CSS files.
