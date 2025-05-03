@@ -6,7 +6,7 @@ draft = false
 
 [taxonomies]
 categories = ["Science"]
-tags = ["Science"]
+tags = ["science"]
 [extra]
 toc = true
 keywords = "RPT, Radiopharmaceutical Therapy, Cancer therapy, Radiopharmaceuticals"
